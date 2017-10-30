@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0040)http://www.sourceminer.org/octminer.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- Mirrored from www.sourceminer.org/experimentalStudies.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Nov 2014 13:57:25 GMT --><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<title>SourceMiner</title>
+<link rel="stylesheet" href="./SourceMiner_files/styles.css" type="text/css">
+<script type="text/javascript" async="" src="./SourceMiner_files/ga.js"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18856574-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+	<img src="./SourceMiner_files/body-bgL.jpg" align="left">
+	<div id="wrapper">
+	  <div id="header">
+    <h2>SourceMiner</h2>
+			<div class="tagline"><p>A Multiple View Interactive Environment for Software Visualization</p></div>
+		</div>
+		<div id="body" class="clear">
+			<div id="sidebar" class="column-left">
+				<ul>
+                	<li>
+						<h4>&nbsp;</h4>
+                        <ul class="blocklist">
+                            <li><a href="http://www.sourceminer.org/index-2.html">Home</a></li>
+                            <!--<li><a href="people.html">People</a></li>-->
+                            <li><a href="http://www.sourceminer.org/installSourceMiner.html">Installing SourceMiner</a></li>
+							<li><a href="http://eepurl.com/b60oD">Subscribe to our e-mail newsletter</a></li>
+                            <li><a href="http://www.sourceminer.org/screenshots.html">Screenshots</a></li>
+                            <li><a href="http://www.sourceminer.org/videos.html">Videos: SourceMiner in Action</a></li>
+                            <li><a href="http://www.sourceminer.org/octminer.html#">Experimental Studies</a></li>
+                            <li><a href="http://www.sourceminer.org/collaborativeVersion.html">Collaborative Version</a></li>
+ <li class="selected-item"><a href="http://www.sourceminer.org/octminer.html">OctMiner for MATLAB and Octave</a></li>
+							<li><a href="http://www.sourceminer.org/slrcloud.html">Cloud Computing</a></li>
+                            <li><a href="http://www.sourceminer.org/projects.html">Ongoing Projects</a></li>
+                            <li><a href="http://www.sourceminer.org/publications.html">Publications</a></li>   
+                            <li><a href="http://www.sourceminer.org/contact.html">Contact</a></li>
+                        </ul>
+
+					</li>	
+					
+					
+				</ul>
+			</div>
+			<div id="content" class="column-right">
+				<!-- CONTENT -->
+				<h2>OctMiner: A Multiple View Environment for MATLAB and GNU/Octave	</h2>
+ <p>&nbsp;</p>
+				<p> Program comprehension plays an important role in Software Engineering. In fact, many of the software lifecycle activities depend on program comprehension. Despite the importance of MATLAB and Octave programing languages in the Engineering and Statistical communities, little attention has been paid to the conception, implementation and characterization of tools and techniques for the comprehension of programs written in these languages. Considering this scenario, this paper presents a Multiple View Interactive Environment (MVIE) called OctMiner tailored to support the comprehension of programs in the aforementioned languages. OctMiner provides a set of coordinated visual metaphors that can be adjusted in accordance with programmers needs.</p>
+
+<p><b>OctMiner Architectural Overview</b></p>
+				
+			<p>Figure 1 depicts the main four elements of OctMiner: the Eclipse IDE RAP/RCP, the Octclipse plugin, the Octave interpreter and the MVIE toolkit. Considering that the Eclipse IDE enables its extension through the use of plugins, the MVIE toolkit uses this feature to provide its functionalities as well as to make possible the MVIE tailoring for the analysis of data from different domains, in this case the data gathered from MATLAB and Octave programs. To achieve this goal we implemented an Analyzer module as conveyed in Figure 1</p>	
+                <table>
+                <tbody><tr> <td align="center"><a href="./SourceMiner_files/Octminer_environment.jpg"><img src="./SourceMiner_files/Octminer_environment.jpg" border="0" width="500" height="300"></a>
+				     </td>
+				    
+			    </tr>
+
+</tbody></table>
+<center>Figure 1</center><br>
+<p>
+The Octclipse plugin converts data from the routine to the Abstract Syntax Tree (AST). From the AST provided by the Octclipse plugin we were able to develop a plugin to analyze the AST and to extract data from the routine in a format appropriated to feed the visual structures. The Octclipse plugin also provides an Octave development environment built upon Eclipse's Dynamic Languages Toolkit. This environment enables programmers to create Octave scripts (*.m files), edit them in a multi featured text editor, run the Octave interpreter, and see the result displayed in the IDE's console.
+The AST plays an important role in the context of OctMiner. In the AST, all data gathered from the routine is stored in a hierarchy structure. The following statement has its corresponding AST created by the Octclipse plugin depicted in figure below:</p>
+<p>
+<i>x = x-2 * pi * floor (x / (2*pi))</i>
+</p>
+
+
+<table>
+<tbody><tr>
+ <td align="center"><a href="./SourceMiner_files/Octminer_AST.png"><img src="./SourceMiner_files/Octminer_AST.png" align="right" border="0" width="500" height="300"></a>
+	
+				</td>
+</tr>
+</tbody></table>
+ <center>Figure 2</center><br>
+<p>
+As can be seen in Figure 2, the AST provides identifiers for each enclosed element, which are crucial to search the AST. For example, it enables finding out which parameter list a function receives. The AST also provides information about the location of the element in the routine. The Analyzer module  gets the data set provided by the AST to feed the visual structures. To analyze the structure of statements such as the one presented in Figure 2, we considered the following definitions of each AST element: ExpressionStatement (declarations of a given expression); BinaryExpression (binary, arithmetic and equality operators); AssignmentLHSExpression (classifies the identifiers as variables); SymbolReference (usually a variable or function in the sentence); Constant; SymbolCallExpression (a function is called through the passage of parameters); CallArgumentList (the list of arguments that is passed for the function); ParenthesisExpression (indicates a parenthesis in the statement to define the precedence order). These definitions were considered to create the algorithm that parses the AST to obtain the elements to comprise the visual structure. Now we can decide about the views to make available for the comprehension of the routines of the two languages.</p>
+
+
+<p><b>Views Example</b></p>
+<table>
+				<tbody><tr>
+				     <td><a href="./SourceMiner_files/Octminer_full_1.jpg"><img src="./SourceMiner_files/Octminer_full_1.jpg" align="left" border="0" width="300" height="200"></a>
+					 <br>Figure 3<br></td>
+				     <td><a href="./SourceMiner_files/Octminer_full_2.jpg"><img src="./SourceMiner_files/Octminer_full_2.jpg" align="right" border="0" width="300" height="200"></a>
+					 <br>Figure 4<br></td>
+				</tr>
+
+<tr>
+				     <td><a href="./SourceMiner_files/Octminer_full_3.jpg"><img src="./SourceMiner_files/Octminer_full_3.jpg" align="left" border="0" width="300" height="200"></a>
+					 <br>Figure 5<br></td>
+				     <td><a href="./SourceMiner_files/Octminer_full_4.jpg"><img src="./SourceMiner_files/Octminer_full_4.jpg" align="right" border="0" width="300" height="200"></a>
+					 <br>Figure 6<br></td>
+				</tr>
+
+<tr>
+				     <td><a href="./SourceMiner_files/Octminer_full_3.jpg"><img src="./SourceMiner_files/Octminer_7.png" align="left" border="0" width="300" height="200"></a>
+					 <br>Figure 7<br></td>
+				     <td><a href="./SourceMiner_files/Octminer_full_4.jpg"><img src="./SourceMiner_files/Octminer_8.png" align="right" border="0" width="300" height="200"></a>
+					 <br>Figure 8<br></td>
+				</tr>
+<tr>
+				     <td><a href="./SourceMiner_files/Octminer_full_3.jpg"><img src="./SourceMiner_files/Octminer_9.png" align="left" border="0" width="300" height="200"></a>
+					 <br>Figure 9<br></td>
+				    
+				</tr>
+
+				</tbody></table>
+<br>	
+<p><b>Instalation and Manuals</b></p>
+	
+<p><a href="http://www.sourceminer.org/octminer/inst20150321.pdf">Guide: Basic Instalation - Compressed version (Portuguese)</a></p>	
+<p><a href="http://www.propriedaderiodepedras.com.br/OctMiner_Jar.rar">OctMiner: compressed version with a example Repository (for Win 32 or 64 bits)</a></p>
+<p><a href="http://www.sourceminer.org/octminer/inst20150321.pdf">Guide: Main Features (Portuguese)</a></p>
+
+<p><a href="http://www.sourceminer.org/octminer/primeiro_estudo.pdf">Study 1: Using OctMiner to identify potential symptoms of tangling and scattering (Portuguese)</a></p>
+
+<p><a href="http://www.sourceminer.org/octminer/segundo_estudo.pdf">Study 2: Identify if OctMiner provides a effective support to clarify programmer's doubts (Portuguese)</a></p>
+
+
+ 
+	
+			  <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+               
+               
+                				
+		  </div>
+		</div>
+		<div id="footer" class="clear">
+			<p class="left">Copyright © 2010 <a herf="http://sourceminer.sourceforge.net">http://sourceminer.sourceforge.net</a></p>
+			<p class="right">Design by <a href="http://www.spyka.net/">Free CSS Templates</a> and <a href="http://www.justfreetemplates.com/">Free Web Templates</a></p>
+		</div>
+	</div>
+
+<div style="font-size: 0.8em; text-align: center;">
+<br>
+Design downloaded from Zeroweb.org: <a href="http://www.zeroweb.org/">Free website templates, layouts, and tools.</a><br>
+<br>
+</div>
+<!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://sourceforge.net/apps/piwik/sourceminer/" : "http://sourceforge.net/apps/piwik/sourceminer/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./SourceMiner_files/piwik.js" type="text/javascript"></script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript>&lt;p&gt;&lt;img src="http://sourceforge.net/apps/piwik/sourceminer/piwik.php?idsite=1" style="border:0" alt=""/&gt;&lt;/p&gt;</noscript>
+<!-- End Piwik Tag -->
+
+
+<!-- Mirrored from www.sourceminer.org/experimentalStudies.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 13 Nov 2014 13:57:25 GMT -->
+
+</body></html>
