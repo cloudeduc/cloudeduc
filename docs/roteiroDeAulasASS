@@ -1,0 +1,198 @@
+	ROTEIRO DE AULAS - Aulas Práticas da disciplina Analise e Projetos			
+			
+	1. Aula - 13/02/2017
+	1.1. Apresentação do Plano de Curso / Definição da 1a Avaliação para dia 27/03/2017
+	1.2. Aluno criar conta no github
+	1.3. Apresentação do appweb nodecellar
+	1.4. Pesquisa livre na web sobre o que é Requisitos Funcionais e exemplos
+	1.5. Identificar na appweb nodecellar os Requisitos Funcionais e sugerir novos requisitos funcionais
+	1.6. Criar documento com os RFs identificados e sugeridos da appweb nodecellar e realizar commit no github
+	1.7. Apresentação de um aluno selcionado para explanar RFs identificados e sugeridos da appweb nodecellar e 
+	     Debate com alunos
+	1.8. Atividade para casa criar mapa mental através do freemind dos RFs identificaods e novos requisitos funcionais 
+	     sugeridos da appweb nodecellar para evolução da arquitetura.
+	
+	Grau de Satisfação da Turma: Após o término da aula a turma foi questionada sobre a metodologia e todos concordaram com a
+	didática e abordagem prática do conteúdo possibilianto o corpo discente a pesquisa, reflexão, debate e esclarecimentos 
+	referente ao objeto de estudo.
+	
+	Parabenizando pela proposta inovadora de com base numa aplicação pano de fundo abordar o conteúdo da disciplina.
+	
+	2. Aula - 20/02/2017
+	2.0. Revisão da aula anterior (CRUD - requisitos funcionais); 
+	2.1. Requisitos não funcionais: exemplo: segurança
+	2.2. Necessidades dos usuários
+	2.3. Regras de negocio
+	2.4. Requisitos funcionais e requisitos não funcionais
+	2.4.1. Levantados/identificados/elicitados
+	2.5. Exemplos de template de caso de uso
+	2.6. Exemplos de diagrama de caso de uso
+	2.7. Atividades: selecionar um template qualquer; 
+			 reproduzir o template em docx;
+			 criar os casos de uso das melhorias/evolução da aplicação nodecellar;
+			 criar o diagrama dos casos de uso da app nodecellar.
+			 
+	3. Aula - 06/03/2017
+	3.1. Revisão do que foi discutido nas aulas 1 e 2
+	3.2. Discussão do documento Casos de USo do Prof Ricardo Falbo da UFES com enfase na estrutura do que deve conter
+	um caso de uso.
+	3.3. Introdução nas possibilidades de relacionamento entre casos de uso
+	3.4. Exemplo do uso de protótipos para complementar e validar as informações contidas nos casos de uso
+	3.5. Os alunos foram solicitados a ajustar os casos de uso elaborados na aula anterior em relação aos itens descritos 
+	no documento sobre casos de uso disponibilizado no Blackboard.
+	3.6. Foi informado que os alunos deveriam responder no mínimo a uma das perguntas colocadas no fórum de discussao no 
+	Blackboard e que também deveriam comentar no minimo duas questões apresentadas pelos colegas no fórum.
+	3.2. Os alunos que participaram pela primeira vez desta disciplina na aula de hoje ficaram no final para assistir um resumo 
+	do que já tinha sido discutido nas aulas anteriores e também assistiram apresentação do plano de ensino da disciplina.
+	
+	4. Aula - 13/03/2017
+	4.1. Atividade fórum de discussão no blackboard da UNIFACS
+	4.2. Atividade de criação de caso de uso da aplicaçao livre ???
+	4.3. Atividades de criação de diagrama de classe conceitual da aplicação livre ???
+	
+	5. Aula - 20/03/2017
+	5.1. Instalar Virtualbox, aplicação para trabalhar com virtualização de máquinas virtuais
+	5.2. Importar imagem da aplicação OpenEMR para o virtualbox
+	5.3. Acessar aplicação no browser
+	5.4. Apresentar as funcionalidades da aplicação OpenEMR
+	5.5. Definição do conteúdo da 1a avaliação da disciplina
+	
+	6. Aula - 27/03/2017 - niver de Julia (Faltei esta aula)
+	6.1. Revisão geral para avaliação da disciplina
+	
+	7. Aula - 03/04/2017
+	7.1. 1a Avaliação da Disciplina (Teórica)
+	
+	8. Aula - 10/04/2017
+	8.1.Correção das Questões da 1a Avaliação, através do fórum de discussão, com orientação do professor para tirar dúvidas.
+	
+	9. Aula - 17/04/2017
+	9.1. Documentação da Aplicação Serviço de Taxi (app web). ( github.com/mistryrn/taxi-app )
+	9.2. Artefatos
+	9.2.1. Analise
+	9.2.1.1. Especificação de Requisitos
+	9.2.1.2. Casos de Uso
+	9.2.1.3. Diagrama de Casos de Uso 
+	9.2.2. Projetos
+	9.2.2.1. Arquitetura de Software (Subsistemas: View, ViewController; Dispatcher(Middleware); 
+	                                               DataController; Datastore)
+	9.2.2.2. Diagrama de Sequência
+	9.2.2.3. Diagrama de Classes
+	9.3. Material de Apoio UML - Paradigma Orientação a Objetos
+	     => www.dsc.ufcg.edu.br/~jaques/cursos/map/html/uml
+							Artefatos
+				Analise                   			Projetos
+			1. Especificação de Requisitos			2. Arquitetura de Software
+			1.1. Casos de Uso				3. Diagrama de Sequência
+			1.2. Diagrama de Casos de Uso			4. Diagrama de Classes
+	
+	     Nota: Conteúdo: Diagrama de Classes, Diagrama de Sequência e Exemplos
+		   2a Avaliação Analise e Projeto: 05/06/17
+	
+	10. Aula - 24/04/2017
+	10.1. Aula programada no blackboard
+	
+	11. Aula - 01/05/2017
+	11.1. Não Houve Aula. Feriado - Dia do Trabalhador
+	
+	12 Aula - 08/05/2017
+	12. Diagramas de UML 
+	12.1. Diagrama de Sequência 
+	12.2. Diagrama de Atividades
+	13. Elaboração de Diagramas 
+	14. Engenharia Direta 
+	14.1. Regras de Negócio, Requisitos Funcionais e Requisitos Não Funcionais, Casos de Uso / 
+	      História de Usuário, Diagrama de Casos de Uso, Diagrama de Classe Conceitual, 
+	      Diagrama de Classe de Sistema, Diagrama de Interação((Diagrama de Sequência, Diagrama de Atividades),
+	      Diagrama de Compoenentes, Diagrama de Implantação    
+	15. Engenharia Reversa
+	15.1. Código Fonte, Código Binário
+	15.1.1. Diagrama de Sequência, Diagrama de Atividades, Diagrama de Classes
+	16. Acessar url https://github.com/mistryrn/taxi-app
+	16.1. Dado os source code em .java, aplicar engenharia reversa para apresentar o diagrama de classes)
+	16.1.1. Apresentado Algumas tools: poseidon uml standard; argouml; staruml; Visual Paradigm UML free trial; Enterprise Architect UML
+	16.1.2. Demonstração exemplo em vídeo no youtube de um código em java utilizando engenharia reversa para criar o diagrama de classe
+	16.1.3. Apresentação documentação referência www.dsc.ufcg.edu.br/~jacques/cursos/map/html/uml/uml.htm 
+	17. Trabalho Projeto (Reposição de aula 24/04/17 e Compensação de C.H. 01/05/17)
+	17.1. Será disponibilizado no blackboard
+	
+	13. Aula - 15/05/2017
+	13.1. Diagrama UML - Comparação
+	13.2. Características de Diagramas de Classe
+	13.3. Elaboração de diagramas de classe a partir de artefatos fornecidos
+	13.3.1. Estudo de Caso do programa de alocação de salas numa universidade
+	13.4. Próxima aula trazer um dos livros indicados na referência do plano de ensino
+	13.5. Citação de outras ferramentas UML, Astah UML, draw.io, Visio da Microsoft.
+	
+	Notas: 	1. 2a Avaliação dia 05/06/2017
+		2. Reforço da importância dos estudos das referências sugeridas no plano de ensino.
+		3. Somente 01(um) aluno realizou a atividade da aula anterior, referente a engenharia reversa.
+		4. Material disponível de aula UML (curso UML), no link www.dsc.ufcg.edu.br
+		5. Reforço para realizar a atividade anterior, referente a engenharia reversa, do sistema de taxi-app,
+		   dado 04(quatro) artefatos.
+		6. Utilizado o portal da Amazon.com para simular compras de livros, relacionando com os diagramas
+		   UML 
+		   
+	14. Aula - 22/05/2017
+	14.1. Exercicíos Diagrama UML
+	1) Elabore um diagrama de classes para representar um e-mail considerando, no mínimo, 
+	   seus seguintes componentes: destinatário, assunto, texto, arquivo anexo, dentre outros.
+	2) Elabore um diagrama de classes para representar um livro composto de paginas e estas últimas compostas
+	   por parágrafos. Além disso, considere a possibilidade do livro ter uma sobre-capa.
+	3) Elabore um diagrama de classes para representar a seguinte situação: todo aluno matriculado no 
+	   último semestre será orientado por um professor para as atividades do seu Trabalho Final de Curso. 
+	   Alguns professores orientam vários alunos e outros, nenhum. 
+
+	4) O diagrama de classes na notação UML, apresentado abaixo, NÃO permite deduzir que um:
+	   (A) ator atua em um único filme
+	   (B) diretor pode não ter dirigido nenhum filme
+	   (C) documentário possui título e verba
+	   (D) longa metragem é produzido por pelo menos um produtor
+	   (E) produtor produziu filmes de um determinado diretor
+	   
+	   Figura UML 1
+	   
+	   (Resposta Letra A)
+	   
+	5) Na modelagem de sistemas, há um conjunto de atividades denominado Engenharia de Requisitos.
+	   Nexto contexto, o propósito da validação de requisitos é:
+	   (A) assegurar que os requisitos menos arriscados sejam considerados inicialmente no desenvolvimento.
+	   (B) assegurar que o produto de software sendo especificado está em conformidade com as necessidades
+	       do usuário
+	   (C) aumentar o nível de abstração na comunicação entre especialistas do domínio e engenheiros de
+	       requisitos
+	   (D) definir formas de rastrear os requisitos a partir dos correspondentes artefatos de modelagem e de
+	       código eventualmente existentes	
+	       
+	       (Resposta Letra B)
+	       
+	   (E) maximiizar o reúso de requisitos voláteis identificados em outros sistemas
+	6) Questao 6 na folha seguinte:
+	   No modelo de classes de projeto em notação UML 2.3 mostrado abaixo, no qual os detalhes irrelevantes 
+	   para a questão foram omitidos, considere que:
+	   . ClasseY é a única classe abstrata do diagrama
+	   . São apresentados os únicos relacionamentos existentes entre as classes envolvidas
+	   . Z é uma instância de ClasseZ
+	   
+	   O modelo ao lado permite concluir que uma mensagem enviada por Z pode, direta ou indiretamente, disparar
+	   a execução de uma operação definida em:
+	   (A) ClasseU e ClasseW, mas não em ClasseX
+	   (B) ClasseU e ClasseW, mas não em ClasseY
+	   (C) ClasseX e ClasseY, mas não em ClasseZ
+	   (D) ClasseX e ClasseZ, mas não em ClasseW
+	   (E) ClasseZ e ClasseY, mas não em ClasseU 
+	   
+	   Figura UML 2
+	   
+	   	(Resposta Letra A)
+
+	15. Aula - 29/05/2017
+	15.1. Revisão Geral para 2a Avaliação
+
+	16. Aula - 05/06/2017
+	16.1. 2a Avaliação
+	
+	17. Aula - 12/06/2017
+	17.1. Aplicação do Questionário de Pesquisa Perfil do Aluno e Aderência com a Disciplina
+	17.2. Revisão Diagrama de Sequência e de Classe
+	17.3. Entrega e Dúvidas da 2a Avaliação

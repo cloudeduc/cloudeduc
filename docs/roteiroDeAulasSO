@@ -1,0 +1,229 @@
+		ROTEIRO DE AULAS - Aulas Práticas da disciplina Introdução ao Sistema Operacional			
+			
+	1. Aula - 15/02/2017
+	1.1. Apresentação do Plano de Curso / Definição da 1a Avaliação para dia 29/03/2017
+	1.2. Login no ubuntu conta aluno
+	1.3. Pesquisa livre na web:
+	1.3.1. Processos: O que são? Exemplos?
+	1.3.2. Programas: O que são? Exemplos
+	1.3.3. Atividade 1: Qual a diferença entre Processos e Programas?
+	1.4. Execução dos comandos que ilustram funcionalidades de cada componente do sistema operacional
+	1.4.1. Gerência de Processos
+	1.4.2. Gerência de Memória
+	1.4.3. Gerência de Arquivos
+	1.4.4. Gerência de Entrada e Saída
+	1.5. Atividade 2 - Descreva de forma resumida os principais componentes da computação em nuvem. 
+	Considere como exemplo desta descrição uma aplicação web disponibilizada na nuvem.
+	
+	2. Aula - 22/02/2017
+	2.1. Revisão dos conceitos aula anterior
+	2.2. Explicação Figura Hierarquia de memória
+	2.2.1. Registradores (Dentro da CPU)
+	2.2.2. Cache (L1 e L2)
+	2.2.3. Principal (RAM e ROM)
+	2.2.4. Auxiliares / Secundária ( Cache de Disco [Swap], Disco Magnético, Fita, CD-ROM, HD, Pen Drive) 
+	2.3. Utilização do comando sar para analisar processos e memória
+	2.4. Utilizaçao da aplicação nodecellar para representar um processo e consumo de memória
+	2.5. Atividades para casa
+        2.5.1. Pesquisar. Considerando a hierarquia de memória dos sistemas operacionais mostre em diagrama como os dados e
+	                  instruções de um processo migram da memória secundária até os registradores;
+	2.5.2. Prática. Instalar e configurar uma máquina virtual no virtualbox em cima do linux 16.04 LTS com o SO linux
+	                (qualquer distribuição);
+			Em uma estação de trabalho com a distribuição linux ubuntu 16.04LTS instale e configure uma máquina
+			virtual da oracle chamada virtualbox e configure esta máquina virtual para executar uma outra 
+			distribuição linux qualquer diferente do ubuntu 16.04;
+	2.5.3. Acessar docker.com, identificar e apresentar o objetivo do docker, em quais cenários podem ser utilizados e
+	       apresente dois exemplos do seu uso na nuvem. VMware(SO) e Virtualbox Docker
+
+	Nota: Glauco, habilitar o fórum de discussão no blackboard no portal UNIFACS.
+	
+	3. Aula - 08/03/2017
+	3.1. Revisão dos conceitos aula anterior: Gerência de Processo e Gerência de Memốria
+	3.2. Explicação do VirtualBox + Imagens
+	3.3. Explicação VM x Container
+	3.4. Atividade: Considerando uma empresa provedora de software como serviço na nuvem que disponibilizam um portifólio
+	                de aplicações composto por módulos de A a Z, apresente uma proposta de como estes módulos podem ser
+			disponibilizados através de um provedor na nuvem, utilizando máquinas virtuais e containers.
+			Esta empresa posssui N clientes que demandam o uso de serviços de diferentes módulos.
+			
+			
+	4. Aula - 15/03/2017
+	4.1. Atividade fórum de discussão no blackboard da UNIFACS
+	4.2. Execução de comandos linux, distribuição ubuntu, para analisar as gerências do plano de ensino de um SO
+			
+	5. Aula - 22/03/2017
+	5.1. Revisão Gerência de Processos - Ciclo de vida do processo:
+	     (interrupcao, Bloqueio, Chamada de Sistema, Apto, Criação, Executando, Destruição)
+	5.2. Deadlock     
+	5.3. Revisão Gerência de Memória - Hierarquia de Memória
+	5.4. Revisão Gerência de Entrada e Saída e Gerência de Arquivos
+	5.5. Tipos de Modo de Acesso: Usuário e Kernel
+	5.6. SO Monolítico e Camadas, características
+	5.7. Virtualização: Máquina Virtual e Container
+	5.8. Estudar material disponibilizado no blackboard
+	
+	Nota: Turma precisou entender porposta do plano de ensino de ISO
+	
+	6. Aula - 29/03/2017 - Revisão para primeira avaliação (2a parte)
+	6.1. Material de aula no blackboard
+	6.2. Aula3 - Processos / Thread
+	6.3. Aula4 - Chamadas de Sistemas
+	6.4. Respostas do Fórum de Discussão Sobre Bloco de Controle de Processos no Blackboard
+	6.5. Dúvidas / Provocar Discussões e Reflexões / Debates
+
+	7. Aula - 05/04/2017
+	7.1. 1a Avaliação da disciplina (teórica)
+	
+	8. Aula - 12/04/2017
+	8.1. Correção das questões da 1a avaliação, através do fórum de discussão, com orientação do professor nos debates.
+
+	9. Aula - 19/04/2017 ???
+	9.1. Pesquisar no google pelos principais algortimos de escalonamento de processos
+	9.2. Em pares, escolha um algortimo e elabore um pequeno texto e figura que o exemplifique
+	9.3. Algoritmos preemptivos e não preemptivos
+	9.4. Revisão: Níveis de Acesso de Execução dos Processos: Usuário e Kernel
+	9.5. Revisão: Perfis de Processos: CPU Bound e I/O Bound, Tamanho dos Processos (Qtd de Instruções)
+	9.6. Otimizar Uso de Execução de Processos (Escalonamento), critérios (indicadores):
+	9.6.1. Grau de Utilização da CPU; Tempo de Produtividade / Tempo de Retorno / Tempo de Espera / 
+	       Tempo Médio de Espera
+	9.7. Estrutura de Dados de Processos (Ficam no Bloco de Controle de Dados de Processos que estão na memória)
+	9.8. Demonstração do Uso do simulador SOSIM, para analisar os principais algoritmos de escalonamento de 
+	     processos, gerenciamento de memória e entrdada/saída
+	     
+	     Nota: 2a Avaliação ISO: 07/06/17 
+	
+	10. Aula - 26/04/2017
+	10.1. Pesquisar outros simuladores para analisar os principais algoritmos de escalonamento de 
+	     processos, gerenciamento de memória e entrada/saída
+	10.2. Gravar um vídeo de demonstração das funcionalidades do simulador referente as gerências de SO e 
+	      postar no youtube
+	      
+	11. Aula - 03/05/2017
+	11.1. Exemplos de Algoritmos de Escalonamento de Processos 
+	11.2. Exercícios em Pares de Escalonamento de Processos 
+	11.3. Pesquisa de Algoritmos de Alocação de Memória
+	
+	12. Aula - 10/05/2017
+	12.1. Gerenciamento de Alocação de Memória
+	12.1.1. Política de Seleção de Partição: First-Fit; Best-fit-only; Best-available-fit
+	12.1.2. Fragmentação Interna x Externa	
+	
+	Nota. Na próxima aula, 17/05/17, terão atividades relacionadas com os livros: TANENBAUM e 
+	      SILBERSCHATZ
+	      
+	13. Aula - 17/05/2017
+	13.1. 
+	1) Explique a diferença entre endereço lógico e endereço físico.
+     	2) Explique os seguintes algoritmos de alocação de memória:
+            a) First-fit (o primeiro que couber):
+            b) Best-fit (o que melhor couber, pela menor diferença):
+            c) Worst-fit (o que pior couber, pela maior diferença):
+            d) Next-fit
+            e) Apresente dois outros algoritmos de alocacao de memoria e os descreva.
+    	3) Considere as seguintes partições livres na memória: 10K, 20K, 4K, 7K, 9K, 12K, 15K e 18K. Como os algoritmos First-fit, Best-fit, Worst-fit e Next-fit alocariam partições para as seguintes requisições?
+            a) 12K
+            b) 10K
+            c) 9K
+            Nota: Desempenho x Uso do espaço disponivel para enderecamento
+    	4) Explique a diferença entre fragmentação externa e interna.
+    	5) Considere um espaço de endereçamento lógico de 8 páginas de 1K cada, mapeados em uma memória física de 32 frames.
+            a) Quantos bits tem o endereço lógico?
+            b) Quantos bits tem o endereço físico?
+    	6) Quando ocorre uma falta de página (page fault)? Descreva as ações do SO em uma page fault?
+    	7) Apresente um algoritmo em portugues estruturado para cada um dos seguintes algoritmos: first-fit, best-fit e worst-fit. 
+    	8) Questão Complementar. Como seria o algoritmo para cada uma das opções citadas?
+            a) First-Fit ?
+            b) Best-Fit  ?
+            c) Worst-Fit ?
+
+    	Nota: Os alunos utilizaram o livro de apoio solicitado na aula anterior para discurssão de alocação de memória.
+              Resolução de Exercícios Sobre Gerenciamento de Memória
+          
+          	( Algoritmos de Alocação de Memória )
+
+    Solução da Questão 8) a)
+
+            v[7]= vetor{10, 20, 4, 7, 9, 12, 15 e 18} numerico;
+
+            i= 0;
+            enquanto (i < 8) faça
+            {
+                se (x <= v[i]) então
+                {  v[i] = x; sair;
+                }
+              i= +1;
+            }
+
+    Solução da Questão 8) b)
+            
+            v[7]= vetor{10, 20, 4, 7, 9, 12, 15 e 18} numerico;
+            
+            indice= 0; diferenca= x - v[0]; x=12;
+            para i = 1 até 7 faça
+            {
+               se (x > v[i]) e (diferenca > x - v[i]) entao
+               {   indice = i; direfenca= x - v[i];
+                   se (diferenca = 0) então { sair; }
+               }
+            } 
+            
+            se (indice = 0) e (x > v[0]) então
+               escreva ("não é possível alocar o dado na memória");
+            senão
+               v[indice]= x;
+	      
+	14. Aula - 24/05/2017
+	14.1. Em um Sistema Computacional é correto afirmar:
+	i) A CPU pode carregar instruções diretamente da memória secundária.
+	ii) A memória principal é composta de palavras, cada qual com seu endereço.
+	iii) A instrução LOAD move o conteúdo de um registrador para a memória principal.
+	iv) A instrução MOVE move palavra da memória principal para registrador da CPU.
+
+	14.2. Elabore um algoritmo em português estruturado que implemente os alocações first-fit, best–first
+	e worst-fit.
+
+	14.3. Assinale a alternativa que melhor defina alocação contígua em disco.
+	a) Consiste em armazenar um arquivo em blocos sequencialmente dispostos no disco. O sistema localiza um
+	   arquivos através do endereço do primeiro bloco e da sua extensão em blocos.
+	b) Um arquivo pode ser organizado com um conjunto de blocos ligados fisicamente no disco, independente de
+	   sua localização lógica. Cada bloco deve possui um ponteiro para o bloco seguinte do arquivo, e assim
+	   sucessivamente.
+	c) Consiste em armazenar um arquivo em blocos radomicamente dispostos no disco. Neste tipo de alocação, o
+	   sistema localiza um arquivos através do endereço do primeiro bloco e da sua extensão em blocos.
+	d) Um arquivo pode ser organizado com um conjunto de blocos ligados logicamente no disco, independente de
+	   sua localização física. Cada bloco deve possui um ponteiro para o bloco seguinte do arquivo, e assim
+	   sucessivamente.
+
+	14.4. “Um arquivo pode ser organizado como um conjunto de blocos ligados logicamente no disco independente de
+	    sua localização física ...” Assinale qual tipo de alocação refere-se o texto acima.
+	a) Alocação encadeada
+	b) Alocação circular
+	c) Alocação contígua
+	d) Alocação indexada
+
+	14.5. Descreva e compare a estrutura de diretórios de nível único, com dois níveis e com diretórios 
+	   hierárquicos. Apresente as limitações e vantagens de cada uma.
+
+	14.6. Descreva e compare as seguintes formas de alocação de espaço em disco: alocação contígua, alocação
+	   encadeada, alocação indexada. Apresente as limitações e vantagens de cada uma.
+
+	14.7. Considerando, os sistemas de arquivos, quais as vantagens e desvantagens de usar locks obrigatório em
+	   vez de locks de consulta?
+
+	15. Aula - 31/05/2017
+	15.1. Sistemas de Arquivos
+	15.1.1. Organização / Armazenamento do Disco: Trilhas e setores; área de boot;
+	15.1.1. Métodos de Acesso
+	15.1.2. Atributos
+	15.1.3. Diretórios
+	15.1.4. Pesquisar Algoritmo de implementação de busca de arquivos no windows (FAT; NTFS) x linux (inode)
+	15.1.5. Quais dos Algoritmos de busca windows x linux tem o melhor desempenho ? Porque ? 
+	
+	Nota: url conteúdo abordado http:/www.gsigma.ufsc.br/~popov/aulas/so1/cap10so.html
+	
+	16. Aula - 07/06/2017
+	16.1. 2a Avaliação
+	
+	17. Aula - 14/06/2017
+	17.1. Aplicação do Questionário de Pesquisa Perfil do Aluno e Aderência com a Disciplina
+	17.2. Entrega e Dúvidas da 2a Avaliação
