@@ -5,6 +5,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><!--charset=iso-8859-1-->
 <title>CloudEducation</title>
+  <!-- Include jQuery -->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+  <link rel="stylesheet" id="font-awesome-css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="styles.css" type="text/css" />
 <script type="text/javascript">
 
@@ -30,28 +33,27 @@
 		</div>
 		<div id="body" class="clear">
 			<div id="sidebar" class="column-left">
-				<ul>
-                	<li>
-						<h4>&nbsp;</h4>
-                        <ul class="blocklist">
-								<li></li>
-								<!--<li><a href="people.html">People</a></li>-->
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-								<li></li>
-	 <li class="selected-item"></li>
-								<li></li>
-								<li></li>
-								<li></li> 
-                        </ul>
+				<div id='nav'>	
+					<ul><li>
+							<h4>&nbsp;</h4>
+							<ul class="blocklist">
+									<li><a href="#content">Introduction</a></li>
+									<li><a href="#strategy">Proposed Strategy: Flipped Classroom</a></li>
+									<li><a href="#features">Operating Systems Course Features</a></li>
+							</ul></li>
+						<li><h4>Roteiros de aulas:</h4><ul class="blocklist"></ol>
+									<li><a href="#rot1">Introdução ao Sistema Operacional</a></li>
+									<li><a href="#rot2">Analise e Projetos</a></li>
+							</ul>
 
-					</li>	
-					
-					
-				</ul>
+					</li></ul>
+				</div>
+
+				<a href='#' class='back-to-top' style="display: inline;">
+						
+					   <i class="fa fa-arrow-circle-up"></i>
+						
+					   </a>
 			</div>
 			<div id="content" class="column-right">
 				<!-- CONTENT -->
@@ -59,7 +61,7 @@
  <p>&nbsp;<p/>
 				<p> Cloud computing has been a successful paradigm in its goal to provide remote computing resources in a competitive and scalable way when compared to traditional computing scenarios. Companies have a growing interest in migrating and using cloud services. However, the literature has reported difficulties and challenges faced by companies while migrating their assets to the cloud. One of the possible reasons for this is the difficulty in the identification of qualified professionals to support companies to plan, perform and monitor the migration of their legacy systems to the cloud. This paper presents an action-research study analyzing the inclusion of cloud computing scenarios in the activities of Software Design and Analysis and Operating Systems undergraduate courses at Universidade Salvador (UNIFACS). The results of the action-research study provided initial evidence that cloud computing resources integrated to the contents of the aforementioned courses can contribute to motivate and engage students in activities. In addition, the knowledge and experience gained has the potential to improve the qualification of future professionals to meet the needs of the market related to cloud computing.</p>
 
-<p><h3><b>Proposed Strategy: Flipped Classroom</b></h3></p>
+<p id='strategy'><h3><b>Proposed Strategy: Flipped Classroom</b></h3></p>
 				
 			<p>Figure 1 The proposed strategy has the goal to create conditions to tailor cloud computing scenarios to be compatible with the two course syllabus. This will enable the alignment of each topic of the course plan with the cloud computing resources/services.
 
@@ -84,7 +86,7 @@ The activities are posted in the Blackboard portal  \footnote{http://www.blackbo
 </table>
  <center>Figure 2</center><br>
 
-<p><h3><b>Operating Systems Course Features</b></h3></p>
+<p id='features'><h3><b>Operating Systems Course Features</b></h3></p>
 
 <p>
 An operating system (OS) is a large and complex set of system programs that control the various operations of a computer system and provide a collection of services to other (user) programs. The purpose of an operating system involves two key goals: i) Availability of a convenient, easy-to-use, and powerful set of services that are
@@ -624,6 +626,66 @@ Design downloaded from Zeroweb.org: <a href="http://www.zeroweb.org/">Free websi
 </div>
 <!-- Piwik -->
 <script type="text/javascript">
+$(function() {
+    // Stick the #nav to the top of the window
+    var nav = $('#nav');
+    var navHomeY = nav.offset().top;
+    var isFixed = false;
+    var $w = $(window);
+    $w.scroll(function() {
+        var scrollTop = $w.scrollTop();
+        var shouldBeFixed = scrollTop > navHomeY;
+        if (shouldBeFixed && !isFixed) {
+            nav.css({
+                position: 'fixed',
+                top: 0,
+                left: nav.offset().left,
+                width: nav.width()
+            });
+            isFixed = true;
+        }
+        else if (!shouldBeFixed && isFixed)
+        {
+            nav.css({
+                position: 'static'
+            });
+            isFixed = false;
+        }
+    });
+});
+jQuery(document).ready(function() {
+ 
+	var offset = 250;
+	
+	var duration = 300;
+	
+	jQuery(window).scroll(function() {
+	
+		if (jQuery(this).scrollTop() > offset) {
+		
+		jQuery('.back-to-top').fadeIn(duration);
+		
+		} else {
+		
+		jQuery('.back-to-top').fadeOut(duration);
+		
+		}
+ 
+	});
+ 
+ 
+ 
+	jQuery('.back-to-top').click(function(event) {
+	
+		event.preventDefault();
+		
+		jQuery('html, body').animate({scrollTop: 0}, duration);
+		
+		return false;
+		
+	})
+ 
+});
 var pkBaseURL = (("https:" == document.location.protocol) ? "https://sourceforge.net/apps/piwik/sourceminer/" : "http://sourceforge.net/apps/piwik/sourceminer/");
 document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
 </script><script type="text/javascript">

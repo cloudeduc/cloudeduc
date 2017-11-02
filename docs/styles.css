@@ -13,6 +13,7 @@ body {
 }
 
 
+
 /** element defaults **/
 table {
 	width:100%;
@@ -125,7 +126,7 @@ h5 {
 	color:#666666;
 }
 ul, ol {
-	margin:0 0 5px 35px;
+	margin:0 0 15px 35px;
 }
 li {
 	padding-bottom:2px;
@@ -227,6 +228,35 @@ div#sidebar li ul li a:hover {
 	color:#09285E;
 	text-decoration:underline;
 }
+
+div#sidebar a.back-to-top {
+	
+   background: none;
+	
+   margin: 0;
+	
+   position: fixed;
+	
+   bottom: 0;
+	
+   right: 0;
+	
+   z-index: 100;
+	
+   display: none;
+	
+   text-decoration: none;
+   border-radius:25px;
+	
+   color: #ffffff;
+	
+   background-color: #ff9000;
+}	
+.back-to-top i {
+
+	 font-size: 60px;
+	
+   }
 
 
 div#sidebar li ul.blocklist li {
