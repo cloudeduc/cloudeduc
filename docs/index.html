@@ -59,13 +59,13 @@
  <p>&nbsp;<p/>
 				<p> Cloud computing has been a successful paradigm in its goal to provide remote computing resources in a competitive and scalable way when compared to traditional computing scenarios. Companies have a growing interest in migrating and using cloud services. However, the literature has reported difficulties and challenges faced by companies while migrating their assets to the cloud. One of the possible reasons for this is the difficulty in the identification of qualified professionals to support companies to plan, perform and monitor the migration of their legacy systems to the cloud. This paper presents an action-research study analyzing the inclusion of cloud computing scenarios in the activities of Software Design and Analysis and Operating Systems undergraduate courses at Universidade Salvador (UNIFACS). The results of the action-research study provided initial evidence that cloud computing resources integrated to the contents of the aforementioned courses can contribute to motivate and engage students in activities. In addition, the knowledge and experience gained has the potential to improve the qualification of future professionals to meet the needs of the market related to cloud computing.</p>
 
-<p><b>Proposed Strategy: Flipped Classroom</b></p>
+<p><h3><b>Proposed Strategy: Flipped Classroom</b></h3></p>
 				
 			<p>Figure 1 The proposed strategy has the goal to create conditions to tailor cloud computing scenarios to be compatible with the two course syllabus. This will enable the alignment of each topic of the course plan with the cloud computing resources/services.
 
 						We decide to focus on the Operating Systems and System Analysis and Design courses for the following two reasons. The first is the potential to explore the use of cloud resources \cite{mokhtar2013cloud}. The second is the opportunity to illustrate how to perform analysis activities (aiming at characterizing and describing the problem \cite{jackson2000software}).  in Figure 1</p>	
 
-                <table>
+                <table class='image'>
                 <tr> <td align="center"><a href="images/iceis2018/FlippedClassroom.png"><img src="images/iceis2018/FlippedClassroom.png"  border = "0" width="500" height="300"/></a>
 				     </td>
 				    
@@ -76,7 +76,7 @@
 <p>
 The activities are posted in the Blackboard portal  \footnote{http://www.blackboard.com/}. It is a virtual learning environment adopted at Universidade Salvador (UNIFACS) for both face-to-face and distance learning courses. The planned activities for each course are registered in Blackboard. The activities can be reached at \footnote{http://www.sourceminer.org/cloudeducation.html}.</p>
 
-<table>
+<table class='image'>
 <tr>
  	<td align="center"><a href="images/iceis2018/fig5espriraldapesquisaacao.png"><img src="images/iceis2018/fig5espriraldapesquisaacao.png" align="center" border = "0" width="500" height="300" /></a>
 	</td>
@@ -84,7 +84,7 @@ The activities are posted in the Blackboard portal  \footnote{http://www.blackbo
 </table>
  <center>Figure 2</center><br>
 
-<p><b>Operating Systems Course Features</b></p>
+<p><h3><b>Operating Systems Course Features</b></h3></p>
 
 <p>
 An operating system (OS) is a large and complex set of system programs that control the various operations of a computer system and provide a collection of services to other (user) programs. The purpose of an operating system involves two key goals: i) Availability of a convenient, easy-to-use, and powerful set of services that are
@@ -95,7 +95,7 @@ The Ubuntu Linux distribution was adopted as the underlying operating system to 
 The reason for this choice is that the Linux Ubuntu distribution is available in several cloud providers such as Google Cloud \footnote{https://cloud.google.com/compute/docs/images} and Google Cloud \footnote{https://aws.amazon.com/marketplace/pp/B01JBL2I8U}. Moreover, this distribution is well known and popular in the open source community  \footnote{https://distrowatch.com/dwres.php?resource=popularity}.</p>
 
 <p><b>Views Example</b></p>
-<table>
+<table class="image">
 				<tr>
 				     <td><a href="images/iceis2018/fig17CloudifyeASS.png"><img src="images/iceis2018/fig17CloudifyeASS.png" align="left" border = "0" width="300" height="200"/></a>
 					 <br>Figure 3</br></td>
@@ -149,392 +149,410 @@ The reason for this choice is that the Linux Ubuntu distribution is available in
 <p><a href="octminer/segundo_estudo.pdf">Study 2: Identify if OctMiner provides a effective support to clarify programmer's doubts (Portuguese)</a></p>
 
  -->
+<div id='rot1'>
 	<p>
-		<b>ROTEIRO DE AULAS - Aulas Práticas da disciplina Introdução ao Sistema Operacional</b>
-	<p>			
-	<p>
-		1. Aula - 15/02/2017
-		<br/>1.1. Apresentação do Plano de Curso / Definição da 1a Avaliação para dia 29/03/2017
-		<br/>1.2. Login no ubuntu conta aluno
-		<br/>1.3. Pesquisa livre na web:
-		<br/>1.3.1. Processos: O que são? Exemplos?
-		<br/>1.3.2. Programas: O que são? Exemplos
-		<br/>1.3.3. Atividade 1: Qual a diferença entre Processos e Programas?
-		<br/>1.4. Execução dos comandos que ilustram funcionalidades de cada componente do sistema operacional
-		<br/>1.4.1. Gerência de Processos
-		<br/>1.4.2. Gerência de Memória
-		<br/>1.4.3. Gerência de Arquivos
-		<br/>1.4.4. Gerência de Entrada e Saída
-		<br/>1.5. Atividade 2 - Descreva de forma resumida os principais componentes da computação em nuvem. 
-		Considere como exemplo desta descrição uma aplicação web disponibilizada na nuvem.
-	</p>
-	<p>
-		2. Aula - 22/02/2017
-		<br/>2.1. Revisão dos conceitos aula anterior
-		<br/>2.2. Explicação Figura Hierarquia de memória
-		<br/>2.2.1. Registradores (Dentro da CPU)
-		<br/>2.2.2. Cache (L1 e L2)
-		<br/>2.2.3. Principal (RAM e ROM)
-		<br/>2.2.4. Auxiliares / Secundária ( Cache de Disco [Swap], Disco Magnético, Fita, CD-ROM, HD, Pen Drive) 
-		<br/>2.3. Utilização do comando sar para analisar processos e memória
-		<br/>2.4. Utilizaçao da aplicação nodecellar para representar um processo e consumo de memória
-		<br/>2.5. Atividades para casa
-		<br/>2.5.1. Pesquisar. Considerando a hierarquia de memória dos sistemas operacionais mostre em diagrama como os dados e
-				instruções de um processo migram da memória secundária até os registradores;
-		<br/>2.5.2. Prática. Instalar e configurar uma máquina virtual no virtualbox em cima do linux 16.04 LTS com o SO linux
-				(qualquer distribuição);
-		<br/>Em uma estação de trabalho com a distribuição linux ubuntu 16.04LTS instale e configure uma máquina
-		virtual da oracle chamada virtualbox e configure esta máquina virtual para executar uma outra 
-		distribuição linux qualquer diferente do ubuntu 16.04;
-		2.5.3. Acessar docker.com, identificar e apresentar o objetivo do docker, em quais cenários podem ser utilizados e
-		apresente dois exemplos do seu uso na nuvem. VMware(SO) e Virtualbox Docker
+		<h3><b>ROTEIRO DE AULAS - Aulas Práticas da disciplina Introdução ao Sistema Operacional</b></h3>
+	</p>			
+	<ul>
+		<li><ul><b>1. Aula - 15/02/2017</b>
+				<li>1.1. Apresentação do Plano de Curso / Definição da 1a Avaliação para dia 29/03/2017</li>
+				<li>1.2. Login no ubuntu conta aluno</li>
+				<li><ul> Pesquisa livre na web:
+					<li>1.3.1. Processos: O que são? Exemplos?</li>
+					<li>1.3.2. Programas: O que são? Exemplos</li>
+					<li>1.3.3. Atividade 1: Qual a diferença entre Processos e Programas?</li>
+				</ul></li>
+				<li><ul>1.4. Execução dos comandos que ilustram funcionalidades de cada componente do sistema operacional
+					<li>1.4.1. Gerência de Processos</li>
+					<li>1.4.2. Gerência de Memória</li>
+					<li>1.4.3. Gerência de Arquivos</li>
+					<li>1.4.4. Gerência de Entrada e Saída</li>
+				</ul></li>
+				<li>1.5. Atividade 2 - Descreva de forma resumida os principais componentes da computação em nuvem. 
+				Considere como exemplo desta descrição uma aplicação web disponibilizada na nuvem.</li>
+		</ul></li>
+		<li><ul><b>2. Aula - 22/02/2017</b>
+				<li>2.1. Revisão dos conceitos aula anterior</li>
+				<li><ul>2.2. Explicação Figura Hierarquia de memória
+					<li>2.2.1. Registradores (Dentro da CPU)</li>
+					<li>2.2.2. Cache (L1 e L2)</li>
+					<li>2.2.3. Principal (RAM e ROM)</li>
+					<li>2.2.4. Auxiliares / Secundária ( Cache de Disco [Swap], Disco Magnético, Fita, CD-ROM, HD, Pen Drive)</li>
+				</ul></li>
+				<li>2.3. Utilização do comando sar para analisar processos e memória</li>
+				<li>2.4. Utilizaçao da aplicação nodecellar para representar um processo e consumo de memória</li>
+				<li><ul>2.5. Atividades para casa
+					<li>2.5.1. Pesquisar. Considerando a hierarquia de memória dos sistemas operacionais mostre em diagrama como os dados e
+							instruções de um processo migram da memória secundária até os registradores;</li>
+					<li>2.5.2. Prática. Instalar e configurar uma máquina virtual no virtualbox em cima do linux 16.04 LTS com o SO linux
+							(qualquer distribuição);</li>
+					<li>Em uma estação de trabalho com a distribuição linux ubuntu 16.04LTS instale e configure uma máquina
+					virtual da oracle chamada virtualbox e configure esta máquina virtual para executar uma outra 
+					distribuição linux qualquer diferente do ubuntu 16.04;</li>
+					2.5.3. Acessar docker.com, identificar e apresentar o objetivo do docker, em quais cenários podem ser utilizados e
+					apresente dois exemplos do seu uso na nuvem. VMware(SO) e Virtualbox Docker</li>
+				</ul></li>
+				<p>Nota: Glauco, habilitar o fórum de discussão no blackboard no portal UNIFACS.</p>
+		</ul></li>
+		<li><ul><b>3. Aula - 08/03/2017</b>
+				<li>3.1. Revisão dos conceitos aula anterior: Gerência de Processo e Gerência de Memốria</li>
+				<li>3.2. Explicação do VirtualBox + Imagens</li>
+				<li>3.3. Explicação VM x Container</li>
+				<li>3.4. Atividade: Considerando uma empresa provedora de software como serviço na nuvem que disponibilizam um portifólio
+						de aplicações composto por módulos de A a Z, apresente uma proposta de como estes módulos podem ser
+				disponibilizados através de um provedor na nuvem, utilizando máquinas virtuais e containers.
+				Esta empresa posssui N clientes que demandam o uso de serviços de diferentes módulos.</li>
+		</ul></li>
+		<li><ul><b>4. Aula - 15/03/2017</b>
+			<li>4.1. Atividade fórum de discussão no blackboard da UNIFACS</li>
+			<li>4.2. Execução de comandos linux, distribuição ubuntu, para analisar as gerências do plano de ensino de um SO</li>
+		</ul></li>
+		<li><ul><b>5. Aula - 22/03/2017</b>
+			<li>5.1. Revisão Gerência de Processos - Ciclo de vida do processo:
+			(interrupcao, Bloqueio, Chamada de Sistema, Apto, Criação, Executando, Destruição)</li>
+			<li>5.2. Deadlock</li>
+			<li>5.3. Revisão Gerência de Memória - Hierarquia de Memória</li>
+			<li>5.4. Revisão Gerência de Entrada e Saída e Gerência de Arquivos</li>
+			<li>5.5. Tipos de Modo de Acesso: Usuário e Kernel</li>
+			<li>5.6. SO Monolítico e Camadas, características</li>
+			<li>5.7. Virtualização: Máquina Virtual e Container</li>
+			<li>5.8. Estudar material disponibilizado no blackboard</li>
 
-		<br/>Nota: Glauco, habilitar o fórum de discussão no blackboard no portal UNIFACS.
-	</p>
-	<p>
-		3. Aula - 08/03/2017
-		<br/>3.1. Revisão dos conceitos aula anterior: Gerência de Processo e Gerência de Memốria
-		<br/>3.2. Explicação do VirtualBox + Imagens
-		<br/>3.3. Explicação VM x Container
-		<br/>3.4. Atividade: Considerando uma empresa provedora de software como serviço na nuvem que disponibilizam um portifólio
-				de aplicações composto por módulos de A a Z, apresente uma proposta de como estes módulos podem ser
-		disponibilizados através de um provedor na nuvem, utilizando máquinas virtuais e containers.
-		Esta empresa posssui N clientes que demandam o uso de serviços de diferentes módulos.
-	</p>
+			<p>Nota: Turma precisou entender porposta do plano de ensino de ISO</p>
+		</ul></li>
+		<li><ul><b>6. Aula - 29/03/2017 - Revisão para primeira avaliação (2a parte)</b>
+			<li>6.1. Material de aula no blackboard</li>
+			<li>6.2. Aula3 - Processos / Thread</li>
+			<li>6.3. Aula4 - Chamadas de Sistemas</li>
+			<li>6.4. Respostas do Fórum de Discussão Sobre Bloco de Controle de Processos no Blackboard</li>
+			<li>6.5. Dúvidas / Provocar Discussões e Reflexões / Debates</li>
+		</ul></li>
+		<li><ul><b>7. Aula - 05/04/2017</b>
+			<li>7.1. 1a Avaliação da disciplina (teórica)</li>
+		</ul></li>
+		<li><ul><b>8. Aula - 12/04/2017</b>
+			<li>8.1. Correção das questões da 1a avaliação, através do fórum de discussão, com orientação do professor nos debates.</li>
+		</ul></li>
+		<li><ul><b>9. Aula - 19/04/2017 ???</b>
+			<li>9.1. Pesquisar no google pelos principais algortimos de escalonamento de processos</li>
+			<li>9.2. Em pares, escolha um algortimo e elabore um pequeno texto e figura que o exemplifique</li>
+			<li>9.3. Algoritmos preemptivos e não preemptivos</li>
+			<li>9.4. Revisão: Níveis de Acesso de Execução dos Processos: Usuário e Kernel</li>
+			<li>9.5. Revisão: Perfis de Processos: CPU Bound e I/O Bound, Tamanho dos Processos (Qtd de Instruções)</li>
+			<li><ul>9.6. Otimizar Uso de Execução de Processos (Escalonamento), critérios (indicadores):
+				<li>9.6.1. Grau de Utilização da CPU; Tempo de Produtividade / Tempo de Retorno / Tempo de Espera / 
+						Tempo Médio de Espera</li>
+			</ul></li>
+			<li>9.7. Estrutura de Dados de Processos (Ficam no Bloco de Controle de Dados de Processos que estão na memória)</li>
+			<li>9.8. Demonstração do Uso do simulador SOSIM, para analisar os principais algoritmos de escalonamento de 
+					processos, gerenciamento de memória e entrdada/saída</li>
 
-		<p>
-4. Aula - 15/03/2017
-<br/>4.1. Atividade fórum de discussão no blackboard da UNIFACS
-<br/>4.2. Execução de comandos linux, distribuição ubuntu, para analisar as gerências do plano de ensino de um SO
-	</p>
-<p>
-5. Aula - 22/03/2017
-<br/>5.1. Revisão Gerência de Processos - Ciclo de vida do processo:
-(interrupcao, Bloqueio, Chamada de Sistema, Apto, Criação, Executando, Destruição)
-<br/>5.2. Deadlock     
-<br/>5.3. Revisão Gerência de Memória - Hierarquia de Memória
-<br/>5.4. Revisão Gerência de Entrada e Saída e Gerência de Arquivos
-<br/>5.5. Tipos de Modo de Acesso: Usuário e Kernel
-<br/>5.6. SO Monolítico e Camadas, características
-<br/>5.7. Virtualização: Máquina Virtual e Container
-<br/>5.8. Estudar material disponibilizado no blackboard
-
-<br/>Nota: Turma precisou entender porposta do plano de ensino de ISO
-	</p>
-<p>
-6. Aula - 29/03/2017 - Revisão para primeira avaliação (2a parte)
-<br/>6.1. Material de aula no blackboard
-<br/>6.2. Aula3 - Processos / Thread
-<br/>6.3. Aula4 - Chamadas de Sistemas
-<br/>6.4. Respostas do Fórum de Discussão Sobre Bloco de Controle de Processos no Blackboard
-<br/>6.5. Dúvidas / Provocar Discussões e Reflexões / Debates
-	</p>
-<p>
-7. Aula - 05/04/2017
-<br/>7.1. 1a Avaliação da disciplina (teórica)
-	</p>
-<p>
-8. Aula - 12/04/2017
-<br/>8.1. Correção das questões da 1a avaliação, através do fórum de discussão, com orientação do professor nos debates.
-	</p>
-<p>
-9. Aula - 19/04/2017 ???
-<br/>9.1. Pesquisar no google pelos principais algortimos de escalonamento de processos
-<br/>9.2. Em pares, escolha um algortimo e elabore um pequeno texto e figura que o exemplifique
-<br/>9.3. Algoritmos preemptivos e não preemptivos
-<br/>9.4. Revisão: Níveis de Acesso de Execução dos Processos: Usuário e Kernel
-<br/>9.5. Revisão: Perfis de Processos: CPU Bound e I/O Bound, Tamanho dos Processos (Qtd de Instruções)
-<br/>9.6. Otimizar Uso de Execução de Processos (Escalonamento), critérios (indicadores):
-<br/>9.6.1. Grau de Utilização da CPU; Tempo de Produtividade / Tempo de Retorno / Tempo de Espera / 
-Tempo Médio de Espera
-<br/>9.7. Estrutura de Dados de Processos (Ficam no Bloco de Controle de Dados de Processos que estão na memória)
-<br/>9.8. Demonstração do Uso do simulador SOSIM, para analisar os principais algoritmos de escalonamento de 
-processos, gerenciamento de memória e entrdada/saída
-
-<br/>Nota: 2a Avaliação ISO: 07/06/17 
-	</p>
-<p>
-10. Aula - 26/04/2017
-<br/>10.1. Pesquisar outros simuladores para analisar os principais algoritmos de escalonamento de 
-processos, gerenciamento de memória e entrada/saída
-<br/>10.2. Gravar um vídeo de demonstração das funcionalidades do simulador referente as gerências de SO e 
-postar no youtube
-</p>
-<p>
-11. Aula - 03/05/2017
-<br/>11.1. Exemplos de Algoritmos de Escalonamento de Processos 
-<br/>11.2. Exercícios em Pares de Escalonamento de Processos 
-<br/>11.3. Pesquisa de Algoritmos de Alocação de Memória
-</p>
-<p>
-12. Aula - 10/05/2017
-<br/>12.1. Gerenciamento de Alocação de Memória
-<br/>12.1.1. Política de Seleção de Partição: First-Fit; Best-fit-only; Best-available-fit
-<br/>12.1.2. Fragmentação Interna x Externa	
-<br/>Nota. Na próxima aula, 17/05/17, terão atividades relacionadas com os livros: TANENBAUM e 
-SILBERSCHATZ
-</p>
-<p>
-13. Aula - 17/05/2017
-<br/>13.1. Questionário:
-<pre><code>
+			<p>Nota: 2a Avaliação ISO: 07/06/17 </p>
+		</ul></li>
+		<li><ul><b>10. Aula - 26/04/2017</b>
+				<li>10.1. Pesquisar outros simuladores para analisar os principais algoritmos de escalonamento de 
+						processos, gerenciamento de memória e entrada/saída</li>
+				<li>10.2. Gravar um vídeo de demonstração das funcionalidades do simulador referente as gerências de SO e 
+						postar no youtube</li>
+		</ul></li>
+		<li><ul><b>11. Aula - 03/05/2017</b>
+				<li>11.1. Exemplos de Algoritmos de Escalonamento de Processos </li>
+				<li>11.2. Exercícios em Pares de Escalonamento de Processos </li>
+				<li>11.3. Pesquisa de Algoritmos de Alocação de Memória</li>
+		</ul></li>
+		<li><ul><b>12. Aula - 10/05/2017</b>
+				<li><ul>12.1. Gerenciamento de Alocação de Memória
+						<li>12.1.1. Política de Seleção de Partição: First-Fit; Best-fit-only; Best-available-fit</li>
+						<li>12.1.2. Fragmentação Interna x Externa</li>
+				</ul></li>	
+			<p>Nota. Na próxima aula, 17/05/17, terão atividades relacionadas com os livros: TANENBAUM e 
+			SILBERSCHATZ</p>
+		</ul></li>
+		<li><ul><b>13. Aula - 17/05/2017</b>
+			<li>Questionário:
+				<pre><code>
 1) Explique a diferença entre endereço lógico e endereço físico.
 2) Explique os seguintes algoritmos de alocação de memória:
-   a) First-fit (o primeiro que couber):
-   b) Best-fit (o que melhor couber, pela menor diferença):
-   c) Worst-fit (o que pior couber, pela maior diferença):
-   d) Next-fit
-   e) Apresente dois outros algoritmos de alocacao de memoria e os descreva.
+	a) First-fit (o primeiro que couber):
+	b) Best-fit (o que melhor couber, pela menor diferença):
+	c) Worst-fit (o que pior couber, pela maior diferença):
+	d) Next-fit
+	e) Apresente dois outros algoritmos de alocacao de memoria e os descreva.
 3) Considere as seguintes partições livres na memória: 10K, 20K, 4K, 7K, 9K, 12K, 15K e 18K. Como os algoritmos First-fit, Best-fit, Worst-fit e Next-fit alocariam partições para as seguintes requisições?
-   a) 12K
-   b) 10K
-   c) 9K
-   Nota: Desempenho x Uso do espaço disponivel para enderecamento
+	a) 12K
+	b) 10K
+	c) 9K
+	Nota: Desempenho x Uso do espaço disponivel para enderecamento
 4) Explique a diferença entre fragmentação externa e interna.
 5) Considere um espaço de endereçamento lógico de 8 páginas de 1K cada, mapeados em uma memória física de 32 frames.
-   a) Quantos bits tem o endereço lógico?
-   b) Quantos bits tem o endereço físico?
+	a) Quantos bits tem o endereço lógico?
+	b) Quantos bits tem o endereço físico?
 6) Quando ocorre uma falta de página (page fault)? Descreva as ações do SO em uma page fault?
 7) Apresente um algoritmo em portugues estruturado para cada um dos seguintes algoritmos: first-fit, best-fit e worst-fit. 
 8) Questão Complementar. Como seria o algoritmo para cada uma das opções citadas?
-   a) First-Fit ?
-   b) Best-Fit  ?
-   c) Worst-Fit ?
-</pre></code>
-<br/>Nota: Os alunos utilizaram o livro de apoio solicitado na aula anterior para discurssão de alocação de memória.
-<br/><br/><b style="font-size:15">Resolução de Exercícios Sobre Gerenciamento de Memória</b>
-</p>
-<code><pre>( Algoritmos de Alocação de Memória )
+	a) First-Fit ?
+	b) Best-Fit  ?
+	c) Worst-Fit ?
+				</code></pre>
+				<p>Nota: Os alunos utilizaram o livro de apoio solicitado na aula anterior para discurssão de alocação de memória.</p>
+				<b style="font-size:15">Resolução de Exercícios Sobre Gerenciamento de Memória</b>
+				<code><pre>
+( Algoritmos de Alocação de Memória )
+				
+Solução da Questão 8) a)
+				
+v[7]= vetor{10, 20, 4, 7, 9, 12, 15 e 18} numerico;
+			
+i= 0;
+enquanto (i < 8) faça
+{
+	se (x <= v[i]) então
+	{  v[i] = x; sair;
+	}
+	i= +1;
+}
 		
-			Solução da Questão 8) a)
-		
-					v[7]= vetor{10, 20, 4, 7, 9, 12, 15 e 18} numerico;
-		
-					i= 0;
-					enquanto (i < 8) faça
-					{
-						se (x <= v[i]) então
-						{  v[i] = x; sair;
-						}
-					  i= +1;
-					}
-		
-			Solução da Questão 8) b)
+Solução da Questão 8) b)
+			
+v[7]= vetor{10, 20, 4, 7, 9, 12, 15 e 18} numerico;
 					
-					v[7]= vetor{10, 20, 4, 7, 9, 12, 15 e 18} numerico;
+indice= 0; diferenca= x - v[0]; x=12;
+para i = 1 até 7 faça
+{
+	se (x > v[i]) e (diferenca > x - v[i]) entao
+	{   indice = i; direfenca= x - v[i];
+		se (diferenca = 0) então { sair; }
+	}
+} 
 					
-					indice= 0; diferenca= x - v[0]; x=12;
-					para i = 1 até 7 faça
-					{
-					   se (x > v[i]) e (diferenca > x - v[i]) entao
-					   {   indice = i; direfenca= x - v[i];
-						   se (diferenca = 0) então { sair; }
-					   }
-					} 
-					
-					se (indice = 0) e (x > v[0]) então
-					   escreva ("não é possível alocar o dado na memória");
-					senão
-					   v[indice]= x;
-				  </pre></code>
-				  <pre>
-14. Aula - 24/05/2017
-14.1. Em um Sistema Computacional é correto afirmar:
+se (indice = 0) e (x > v[0]) então
+	escreva ("não é possível alocar o dado na memória");
+	senão
+		v[indice]= x;
+						</pre></code>
+			</li>
+		</ul></li>
+		<li><ul><b>14. Aula - 24/05/2017</b>
+				<li>Questionário:
+					<code><pre>
+1. Em um Sistema Computacional é correto afirmar:
 	i) A CPU pode carregar instruções diretamente da memória secundária.
 	ii) A memória principal é composta de palavras, cada qual com seu endereço.
 	iii) A instrução LOAD move o conteúdo de um registrador para a memória principal.
 	iv) A instrução MOVE move palavra da memória principal para registrador da CPU.					
-14.2. Elabore um algoritmo em português estruturado que implemente os alocações first-fit, best–first
+2. Elabore um algoritmo em português estruturado que implemente os alocações first-fit, best–first
 e worst-fit.
-14.3. Assinale a alternativa que melhor defina alocação contígua em disco.
+3. Assinale a alternativa que melhor defina alocação contígua em disco.
 	a) Consiste em armazenar um arquivo em blocos sequencialmente dispostos no disco. O sistema localiza um
-	arquivos através do endereço do primeiro bloco e da sua extensão em blocos.
+		arquivos através do endereço do primeiro bloco e da sua extensão em blocos.
 	b) Um arquivo pode ser organizado com um conjunto de blocos ligados fisicamente no disco, independente de
-	sua localização lógica. Cada bloco deve possui um ponteiro para o bloco seguinte do arquivo, e assim
-	sucessivamente.
+		sua localização lógica. Cada bloco deve possui um ponteiro para o bloco seguinte do arquivo, e assim
+		sucessivamente.
 	c) Consiste em armazenar um arquivo em blocos radomicamente dispostos no disco. Neste tipo de alocação, o
-	sistema localiza um arquivos através do endereço do primeiro bloco e da sua extensão em blocos.
+		sistema localiza um arquivos através do endereço do primeiro bloco e da sua extensão em blocos.
 	d) Um arquivo pode ser organizado com um conjunto de blocos ligados logicamente no disco, independente de
-	sua localização física. Cada bloco deve possui um ponteiro para o bloco seguinte do arquivo, e assim
-	sucessivamente.				
-14.4. “Um arquivo pode ser organizado como um conjunto de blocos ligados logicamente no disco independente de
-sua localização física ...” Assinale qual tipo de alocação refere-se o texto acima.
-	a) Alocação encadeada
-	b) Alocação circular
-	c) Alocação contígua
-	d) Alocação indexada
-					
-14.5. Descreva e compare a estrutura de diretórios de nível único, com dois níveis e com diretórios 
-hierárquicos. Apresente as limitações e vantagens de cada uma.
-14.6. Descreva e compare as seguintes formas de alocação de espaço em disco: alocação contígua, alocação
-encadeada, alocação indexada. Apresente as limitações e vantagens de cada uma.
-14.7. Considerando, os sistemas de arquivos, quais as vantagens e desvantagens de usar locks obrigatório em
-vez de locks de consulta?
-
-15. Aula - 31/05/2017
-15.1. Sistemas de Arquivos
-15.1.1. Organização / Armazenamento do Disco: Trilhas e setores; área de boot;
-15.1.1. Métodos de Acesso
-15.1.2. Atributos
-15.1.3. Diretórios
-15.1.4. Pesquisar Algoritmo de implementação de busca de arquivos no windows (FAT; NTFS) x linux (inode)
-15.1.5. Quais dos Algoritmos de busca windows x linux tem o melhor desempenho ? Porque ? 
-						
-Nota: url conteúdo abordado http:/www.gsigma.ufsc.br/~popov/aulas/so1/cap10so.html
-						
-16. Aula - 07/06/2017
-16.1. 2a Avaliação
-						
-17. Aula - 14/06/2017
-17.1. Aplicação do Questionário de Pesquisa Perfil do Aluno e Aderência com a Disciplina
-17.2. Entrega e Dúvidas da 2a Avaliação
+		sua localização física. Cada bloco deve possui um ponteiro para o bloco seguinte do arquivo, e assim
+		sucessivamente.				
+4. “Um arquivo pode ser organizado como um conjunto de blocos ligados logicamente no disco independente de
+	sua localização física ...” Assinale qual tipo de alocação refere-se o texto acima.
+		a) Alocação encadeada
+		b) Alocação circular
+		c) Alocação contígua
+		d) Alocação indexada
+5. Descreva e compare a estrutura de diretórios de nível único, com dois níveis e com diretórios 
+	hierárquicos. Apresente as limitações e vantagens de cada uma.
+6. Descreva e compare as seguintes formas de alocação de espaço em disco: alocação contígua, alocação
+	encadeada, alocação indexada. Apresente as limitações e vantagens de cada uma.
+7. Considerando, os sistemas de arquivos, quais as vantagens e desvantagens de usar locks obrigatório em
+	vez de locks de consulta?
+				</pre></code></li>
+		</ul></li>
+		<li><ul><b>15. Aula - 31/05/2017</b>
+			<li><ul>15.1. Sistemas de Arquivos
+					<li>15.1.1. Organização / Armazenamento do Disco: Trilhas e setores; área de boot;</li>
+					<li>15.1.1. Métodos de Acesso</li>
+					<li>15.1.2. Atributos</li>
+					<li>15.1.3. Diretórios</li>
+					<li>15.1.4. Pesquisar Algoritmo de implementação de busca de arquivos no windows (FAT; NTFS) x linux (inode)</li>
+					<li>15.1.5. Quais dos Algoritmos de busca windows x linux tem o melhor desempenho ? Porque ? </li>
+			</ul></li>								
+			<p>Nota: url conteúdo abordado http:/www.gsigma.ufsc.br/~popov/aulas/so1/cap10so.html</p>
+		</ul></li>						
+		<li><ul><b>16. Aula - 07/06/2017</b>
+				<li>16.1. 2a Avaliação</li>
+		</ul></li>
+								
+		<li><ul><b>17. Aula - 14/06/2017</b>
+				<li>17.1. Aplicação do Questionário de Pesquisa Perfil do Aluno e Aderência com a Disciplina</li>
+				<li>17.2. Entrega e Dúvidas da 2a Avaliação</li>
+		</ul></li>
+	</ul>
 </pre>
+</div>
+			<div id='rot2'>
+				<p><h3><b>ROTEIRO DE AULAS - Aulas Práticas da disciplina Analise e Projetos</b></p></h3>
+				<ul>
+					<li><ul><b>1. Aula - 13/02/2017</b>
+							<li>1.1. Apresentação do Plano de Curso / Definição da 1a Avaliação para dia 27/03/2017</li>
+							<li>1.2. Aluno criar conta no github</li>
+							<li>1.3. Apresentação do appweb nodecellar</li>
+							<li>1.4. Pesquisa livre na web sobre o que é Requisitos Funcionais e exemplos</li>
+							<li>1.5. Identificar na appweb nodecellar os Requisitos Funcionais e sugerir novos requisitos funcionais</li>
+							<li>1.6. Criar documento com os RFs identificados e sugeridos da appweb nodecellar e realizar commit no</br>	github</li>
+							<li>1.7. Apresentação de um aluno selcionado para explanar RFs identificados e sugeridos da appweb</br>	nodecellar e debate com alunos</li>
+							<li>1.8. Atividade para casa criar mapa mental através do freemind dos RFs identificaods e novos requisitos</br>	funcionais 
+								sugeridos da appweb nodecellar para evolução da arquitetura.</li>
+						</ul>
 
-<p><b>ROTEIRO DE AULAS - Aulas Práticas da disciplina Analise e Projetos</b></p>			
-<pre>
-1. Aula - 13/02/2017
-	1.1. Apresentação do Plano de Curso / Definição da 1a Avaliação para dia 27/03/2017
-	1.2. Aluno criar conta no github
-	1.3. Apresentação do appweb nodecellar
-	1.4. Pesquisa livre na web sobre o que é Requisitos Funcionais e exemplos
-	1.5. Identificar na appweb nodecellar os Requisitos Funcionais e sugerir novos requisitos funcionais
-	1.6. Criar documento com os RFs identificados e sugeridos da appweb nodecellar e realizar commit no</br>	github
-	1.7. Apresentação de um aluno selcionado para explanar RFs identificados e sugeridos da appweb</br>	nodecellar e debate com alunos
-	1.8. Atividade para casa criar mapa mental através do freemind dos RFs identificaods e novos requisitos</br>	funcionais 
-	sugeridos da appweb nodecellar para evolução da arquitetura.
+						<p>Grau de Satisfação da Turma: Após o término da aula a turma foi questionada sobre a metodologia e todos concordaram com a 
+							didática e abordagem prática do conteúdo possibilianto o corpo discente a pesquisa, reflexão, debate e esclarecimentos	
+							referente ao objeto de estudo.</p>
 
-	Grau de Satisfação da Turma: Após o término da aula a turma foi questionada sobre a metodologia e todos</br>	concordaram com a
-	didática e abordagem prática do conteúdo possibilianto o corpo discente a pesquisa, reflexão, debate e</br>	esclarecimentos	referente ao objeto de estudo.
+						<p>Parabenizando pela proposta inovadora de com base numa aplicação pano de fundo abordar o conteúdo da
+							disciplina.</p>
+					</li>
+					<li><ul><b>2. Aula - 20/02/2017</b>
+							<li>2.0. Revisão da aula anterior (CRUD - requisitos funcionais); </li>
+							<li>2.1. Requisitos não funcionais: exemplo: segurança</li>
+							<li>2.2. Necessidades dos usuários</li>
+							<li>2.3. Regras de negocio</li>
+							<li>2.4. Requisitos funcionais e requisitos não funcionais</li>
+							<li>2.4.1. Levantados/identificados/elicitados</li>
+							<li>2.5. Exemplos de template de caso de uso</li>
+							<li>2.6. Exemplos de diagrama de caso de uso</li>
+							<li><ul>2.7. Atividades:
+									<li>selecionar um template qualquer;</li>  
+									<li>reproduzir o template em docx;</li>
+									<li>criar os casos de uso das melhorias/evolução da aplicação nodecellar;</li>
+									<li>criar o diagrama dos casos de uso da app nodecellar.</li>
+							</ul></li>
+					</ul></li>
+					<li><ul><b>3. Aula - 06/03/2017</b>
+							<li>3.1. Revisão do que foi discutido nas aulas 1 e 2</li>
+							<li>3.2. Discussão do documento Casos de USo do Prof Ricardo Falbo da UFES com enfase na estrutura do que deve conter
+									um caso de uso.</li>
+							<li>3.3. Introdução nas possibilidades de relacionamento entre casos de uso</li>
+							<li>3.4. Exemplo do uso de protótipos para complementar e validar as informações contidas nos casos de uso</li>
+							<li>3.5. Os alunos foram solicitados a ajustar os casos de uso elaborados na aula anterior em relação aos itens descritos
+									no documento sobre casos de uso disponibilizado no Blackboard.</li>
+							<li>3.6. Foi informado que os alunos deveriam responder no mínimo a uma das perguntas colocadas no fórum de discussao no 
+									Blackboard e que também deveriam comentar no minimo duas questões apresentadas pelos colegas no fórum.</li>
+							<li>3.2. Os alunos que participaram pela primeira vez desta disciplina na aula de hoje ficaram no final para assistir um resumo 
+									do que já tinha sido discutido nas aulas anteriores e também assistiram apresentação do plano de ensino da disciplina.</li>
+					</ul></li>
+					<li><ul><b>4. Aula - 13/03/2017</b>
+							<li>Atividade fórum de discussão no blackboard da UNIFACS</li>
+							<li>4.2. Atividade de criação de caso de uso da aplicaçao livre ???</li>
+							<li>4.3. Atividades de criação de diagrama de classe conceitual da aplicação livre ???</li>
+					</ul></li>
+					<li><ul><b>5. Aula - 20/03/2017</b>
+							<li>5.1. Instalar Virtualbox, aplicação para trabalhar com virtualização de máquinas virtuais</li>
+							<li>5.2. Importar imagem da aplicação OpenEMR para o virtualbox</li>
+							<li>5.3. Acessar aplicação no browser</li>
+							<li>5.4. Apresentar as funcionalidades da aplicação OpenEMR</li>
+							<li>5.5. Definição do conteúdo da 1a avaliação da disciplina</li>
+					</ul></li>
+					<li><ul><b>6. Aula - 27/03/2017 - niver de Julia (Faltei esta aula)</b>
+							<li>6.1. Revisão geral para avaliação da disciplina</li>
+					</ul></li>
+					<li><ul><b>7. Aula - 03/04/2017</b>
+							<li>7.1. 1a Avaliação da Disciplina (Teórica)</li>
+					</ul></li>
+					<li><ul><b>8. Aula - 10/04/2017</b>
+							<li>8.1.Correção das Questões da 1a Avaliação, através do fórum de discussão, com orientação do professor para tirar dúvidas.</li>
+					</ul></li>
+					<li><ul><b>9. Aula - 17/04/2017</b>
+							<li>9.1. Documentação da Aplicação Serviço de Taxi (app web). ( github.com/mistryrn/taxi-app )</li>
+							<li><ul>9.2. Artefatos
+								<li><ul>9.2.1. Analise
+										<li>9.2.1.1. Especificação de Requisitos</li>
+										<li>9.2.1.2. Casos de Uso</li>
+										<li>9.2.1.3. Diagrama de Casos de Uso </li>
+								</ul></li>
+								<li><ul>9.2.2. Projetos
+										<li>9.2.2.1. Arquitetura de Software (Subsistemas: View, ViewController; Dispatcher(Middleware; DataController; Datastore);</li>									
+										<li>9.2.2.2. Diagrama de Sequência</li>
+										<li>9.2.2.3. Diagrama de Classes</li>
+								</ul></li>
+							</ul></li>
+							<li>9.3. Material de Apoio UML - Paradigma Orientação a Objetos
+								=> www.dsc.ufcg.edu.br/~jaques/cursos/map/html/uml			
+								<table class='itens'>
+										<title>Artefatos</title>
+										<th>Analise</th><th>Projetos</th>            			
+											<tr><td>1. Especificação de Requisitos</td>
+												<td>2. Arquitetura de Software</td></tr>
+											<tr><td>1.1. Casos de Uso</td>
+												<td>3. Diagrama de Sequência</td></tr>
+											<tr><td>1.2. Diagrama de Casos de Uso</td>
+												<td>4. Diagrama de Classes</td></tr>
+								</table>
+							</li>
+						<p>Nota: Conteúdo: Diagrama de Classes, Diagrama de Sequência e Exemplos 2a Avaliação Analise e Projeto: 05/06/17
+						</p>
+					</ul></li>
+					<li><ul><b>10. Aula - 24/04/2017</b>
+							<li>10.1. Aula programada no blackboard</li>
+					</ul></li>
+					<li><ul><b>11. Aula - 01/05/2017</b>
+							<li>11.1. Feriado - Dia do Trabalhador</li>
+						</ul></li>
+					<li><ul><b>12 Aula - 08/05/2017</b>
+							<li><ul>12. Diagramas de UML
+									<li>12.1. Diagrama de Sequência</li>
+							</ul></li>
+							<li>12.2. Diagrama de Atividades</li>
+							<li>12.3. Elaboração de Diagramas</li>
+							<li><ul>12.4. Engenharia Direta 
+									<li>12.4.1. Regras de Negócio, Requisitos Funcionais e Requisitos Não Funcionais, Casos de Uso / História de Usuário,
+										Diagrama de Casos de Uso, Diagrama de Classe Conceitual, Diagrama de Classe de Sistema,
+										Diagrama de Interação((Diagrama de Sequência, Diagrama de Atividades), Diagrama de Compoenentes,
+										Diagrama de Implantação</li>  
+								</ul></li>
+							<li><ul>12.5. Engenharia Reversa
+									<li><ul>12.5.1. Código Fonte, Código Binário
+											<li>12.5.1.1. Diagrama de Sequência, Diagrama de Atividades, Diagrama de Classes</li>
+									</ul></li>
+							</ul></li>
+							<li><ul>12.6. Acessar url https://github.com/mistryrn/taxi-app
+									<li><ul>16.1. Dado os source code em .java, aplicar engenharia reversa para apresentar o diagrama de classes)
+											<li>16.1.1. Apresentado Algumas tools: poseidon uml standard; argouml; staruml; Visual Paradigm UML free trial; Enterprise Architect UML</li>
+											<li>16.1.2. Demonstração exemplo em vídeo no youtube de um código em java utilizando engenharia reversa para criar o diagrama de classe</li>
+											<li>16.1.3. Apresentação documentação referência www.dsc.ufcg.edu.br/~jacques/cursos/map/html/uml/uml.htm </li>
+									</ul></li>
+							</ul></li>
+							<li><ul>12.7. Trabalho Projeto (Reposição de aula 24/04/17 e Compensação de C.H. 01/05/17)
+									<li>12.7.1. Será disponibilizado no blackboard</li>
+							</ul></li>
+					</ul></li>
 
-	Parabenizando pela proposta inovadora de com base numa aplicação pano de fundo abordar o conteúdo da</br>	disciplina.
+					<li><ul><b>13. Aula - 15/05/2017</b>
+						<li>13.1. Diagrama UML - Comparação</li>
+						<li>13.2. Características de Diagramas de Classe</li>
+						<li><ul>13.3. Elaboração de diagramas de classe a partir de artefatos fornecidos
+								<li>13.3.1. Estudo de Caso do programa de alocação de salas numa universidade</li>
+						</ul></li>
+						<li>13.4. Próxima aula trazer um dos livros indicados na referência do plano de ensino</li>
+						<li>13.5. Citação de outras ferramentas UML, Astah UML, draw.io, Visio da Microsoft.</li>
 
-2. Aula - 20/02/2017
-	2.0. Revisão da aula anterior (CRUD - requisitos funcionais); 
-	2.1. Requisitos não funcionais: exemplo: segurança
-	2.2. Necessidades dos usuários
-	2.3. Regras de negocio
-	2.4. Requisitos funcionais e requisitos não funcionais
-	2.4.1. Levantados/identificados/elicitados
-	2.5. Exemplos de template de caso de uso
-	2.6. Exemplos de diagrama de caso de uso
-	2.7. Atividades: selecionar um template qualquer; 
-	reproduzir o template em docx;
-	criar os casos de uso das melhorias/evolução da aplicação nodecellar;
-	criar o diagrama dos casos de uso da app nodecellar.
- 
-3. Aula - 06/03/2017
-	3.1. Revisão do que foi discutido nas aulas 1 e 2
-	3.2. Discussão do documento Casos de USo do Prof Ricardo Falbo da UFES com enfase na estrutura do que deve conter
-	um caso de uso.
-	3.3. Introdução nas possibilidades de relacionamento entre casos de uso
-	3.4. Exemplo do uso de protótipos para complementar e validar as informações contidas nos casos de uso
-	3.5. Os alunos foram solicitados a ajustar os casos de uso elaborados na aula anterior em relação aos itens descritos 
-	no documento sobre casos de uso disponibilizado no Blackboard.
-	3.6. Foi informado que os alunos deveriam responder no mínimo a uma das perguntas colocadas no fórum de discussao no 
-	Blackboard e que também deveriam comentar no minimo duas questões apresentadas pelos colegas no fórum.
-	3.2. Os alunos que participaram pela primeira vez desta disciplina na aula de hoje ficaram no final para assistir um resumo 
-	do que já tinha sido discutido nas aulas anteriores e também assistiram apresentação do plano de ensino da disciplina.
-
-4. Aula - 13/03/2017
-	4.1. Atividade fórum de discussão no blackboard da UNIFACS
-	4.2. Atividade de criação de caso de uso da aplicaçao livre ???
-	4.3. Atividades de criação de diagrama de classe conceitual da aplicação livre ???
-
-5. Aula - 20/03/2017
-	5.1. Instalar Virtualbox, aplicação para trabalhar com virtualização de máquinas virtuais
-	5.2. Importar imagem da aplicação OpenEMR para o virtualbox
-	5.3. Acessar aplicação no browser
-	5.4. Apresentar as funcionalidades da aplicação OpenEMR
-	5.5. Definição do conteúdo da 1a avaliação da disciplina
-
-6. Aula - 27/03/2017 - niver de Julia (Faltei esta aula)
-	6.1. Revisão geral para avaliação da disciplina
-
-7. Aula - 03/04/2017
-	7.1. 1a Avaliação da Disciplina (Teórica)
-
-8. Aula - 10/04/2017
-	8.1.Correção das Questões da 1a Avaliação, através do fórum de discussão, com orientação do professor para tirar dúvidas.
-
-9. Aula - 17/04/2017
-	9.1. Documentação da Aplicação Serviço de Taxi (app web). ( github.com/mistryrn/taxi-app )
-	9.2. Artefatos
-	9.2.1. Analise
-	9.2.1.1. Especificação de Requisitos
-	9.2.1.2. Casos de Uso
-	9.2.1.3. Diagrama de Casos de Uso 
-	9.2.2. Projetos
-	9.2.2.1. Arquitetura de Software (Subsistemas: View, ViewController; Dispatcher(Middleware); 
-										DataController; Datastore)
-	9.2.2.2. Diagrama de Sequência
-	9.2.2.3. Diagrama de Classes
-	9.3. Material de Apoio UML - Paradigma Orientação a Objetos
-	=> www.dsc.ufcg.edu.br/~jaques/cursos/map/html/uml
-							Artefatos
-		Analise                   			Projetos
-	1. Especificação de Requisitos			2. Arquitetura de Software
-	1.1. Casos de Uso				3. Diagrama de Sequência
-	1.2. Diagrama de Casos de Uso			4. Diagrama de Classes
-
-	Nota: Conteúdo: Diagrama de Classes, Diagrama de Sequência e Exemplos
-	2a Avaliação Analise e Projeto: 05/06/17
-
-10. Aula - 24/04/2017
-	10.1. Aula programada no blackboard
-
-11. Aula - 01/05/2017
-	11.1. Feriado - Dia do Trabalhador
-
-12 Aula - 08/05/2017
-	12. Diagramas de UML 
-	12.1. Diagrama de Sequência 
-	12.2. Diagrama de Atividades
-	12.3. Elaboração de Diagramas 
-	12.4. Engenharia Direta 
-		12.4.1. Regras de Negócio, Requisitos Funcionais e Requisitos Não Funcionais, Casos de Uso / 
-		História de Usuário, Diagrama de Casos de Uso, Diagrama de Classe Conceitual, 
-		Diagrama de Classe de Sistema, Diagrama de Interação((Diagrama de Sequência, Diagrama de Atividades),
-		Diagrama de Compoenentes, Diagrama de Implantação    
-	12.5. Engenharia Reversa
-		15.1. Código Fonte, Código Binário
-		15.1.1. Diagrama de Sequência, Diagrama de Atividades, Diagrama de Classes
-		16. Acessar url https://github.com/mistryrn/taxi-app
-		16.1. Dado os source code em .java, aplicar engenharia reversa para apresentar o diagrama de classes)
-		16.1.1. Apresentado Algumas tools: poseidon uml standard; argouml; staruml; Visual Paradigm UML free trial; Enterprise Architect UML
-		16.1.2. Demonstração exemplo em vídeo no youtube de um código em java utilizando engenharia reversa para criar o diagrama de classe
-		16.1.3. Apresentação documentação referência www.dsc.ufcg.edu.br/~jacques/cursos/map/html/uml/uml.htm 
-		17. Trabalho Projeto (Reposição de aula 24/04/17 e Compensação de C.H. 01/05/17)
-		17.1. Será disponibilizado no blackboard
-
-13. Aula - 15/05/2017
-		13.1. Diagrama UML - Comparação
-		13.2. Características de Diagramas de Classe
-		13.3. Elaboração de diagramas de classe a partir de artefatos fornecidos
-		13.3.1. Estudo de Caso do programa de alocação de salas numa universidade
-		13.4. Próxima aula trazer um dos livros indicados na referência do plano de ensino
-		13.5. Citação de outras ferramentas UML, Astah UML, draw.io, Visio da Microsoft.
-
-		Notas: 	1. 2a Avaliação dia 05/06/2017
-		2. Reforço da importância dos estudos das referências sugeridas no plano de ensino.
-		3. Somente 01(um) aluno realizou a atividade da aula anterior, referente a engenharia reversa.
-		4. Material disponível de aula UML (curso UML), no link www.dsc.ufcg.edu.br
-		5. Reforço para realizar a atividade anterior, referente a engenharia reversa, do sistema de taxi-app,
-		dado 04(quatro) artefatos.
-		6. Utilizado o portal da Amazon.com para simular compras de livros, relacionando com os diagramas
-		UML 
-
-14. Aula - 22/05/2017
-	14.1. Exercicíos Diagrama UML
-	<code>
-	1) Elabore um diagrama de classes para representar um e-mail considerando, no mínimo, 
+						<p>Notas: 	1. 2a Avaliação dia 05/06/2017
+						2. Reforço da importância dos estudos das referências sugeridas no plano de ensino.
+						3. Somente 01(um) aluno realizou a atividade da aula anterior, referente a engenharia reversa.
+						4. Material disponível de aula UML (curso UML), no link www.dsc.ufcg.edu.br
+						5. Reforço para realizar a atividade anterior, referente a engenharia reversa, do sistema de taxi-app,
+						dado 04(quatro) artefatos.
+						6. Utilizado o portal da Amazon.com para simular compras de livros, relacionando com os diagramas
+						UML 
+						</p>
+					</ul></li>
+					<li><ul><b>14. Aula - 22/05/2017</b>
+						<li>14.1. Exercicíos Diagrama UML
+							<pre><code>
+1) Elabore um diagrama de classes para representar um e-mail considerando, no mínimo, 
 	seus seguintes componentes: destinatário, assunto, texto, arquivo anexo, dentre outros.
-	2) Elabore um diagrama de classes para representar um livro composto de paginas e estas últimas compostas
-	por parágrafos. Além disso, considere a possibilidade do livro ter uma sobre-capa.
-	3) Elabore um diagrama de classes para representar a seguinte situação: todo aluno matriculado no 
-	último semestre será orientado por um professor para as atividades do seu Trabalho Final de Curso. 
-	Alguns professores orientam vários alunos e outros, nenhum. 
-
-	4) O diagrama de classes na notação UML, apresentado abaixo, NÃO permite deduzir que um:
+2) Elabore um diagrama de classes para representar um livro composto de paginas e estas últimas compostas por parágrafos. Além disso, considere a possibilidade do livro ter uma sobre-capa.
+3) Elabore um diagrama de classes para representar a seguinte situação: todo aluno matriculado no último semestre será orientado por um professor para as atividades do seu Trabalho Final de Curso. Alguns professores orientam vários alunos e outros, nenhum. 
+4) O diagrama de classes na notação UML, apresentado abaixo, NÃO permite deduzir que um:
 	(A) ator atua em um único filme
 	(B) diretor pode não ter dirigido nenhum filme
 	(C) documentário possui título e verba
@@ -542,52 +560,48 @@ Nota: url conteúdo abordado http:/www.gsigma.ufsc.br/~popov/aulas/so1/cap10so.h
 	(E) produtor produziu filmes de um determinado diretor
 
 	Figura UML 1
-
 	(Resposta Letra A)
 
-	5) Na modelagem de sistemas, há um conjunto de atividades denominado Engenharia de Requisitos.
+5) Na modelagem de sistemas, há um conjunto de atividades denominado Engenharia de Requisitos.
 	Nexto contexto, o propósito da validação de requisitos é:
-		(A) assegurar que os requisitos menos arriscados sejam considerados inicialmente no desenvolvimento.
-		(B) assegurar que o produto de software sendo especificado está em conformidade com as necessidades
-		do usuário
-		(C) aumentar o nível de abstração na comunicação entre especialistas do domínio e engenheiros de
-		requisitos
-		(D) definir formas de rastrear os requisitos a partir dos correspondentes artefatos de modelagem e de
-		código eventualmente existentes	
-
-		(Resposta Letra B)
-
+	(A) assegurar que os requisitos menos arriscados sejam considerados inicialmente no	desenvolvimento.
+	(B) assegurar que o produto de software sendo especificado está em conformidade com as necessidades do usuário
+	(C) aumentar o nível de abstração na comunicação entre especialistas do domínio e engenheiros de requisitos
+	(D) definir formas de rastrear os requisitos a partir dos correspondentes artefatos de modelagem e de código eventualmente existentes	
 	(E) maximiizar o reúso de requisitos voláteis identificados em outros sistemas
-	6) Questao 6 na folha seguinte:
+		(Resposta Letra B)
+6) Questao 6 na folha seguinte:
 	No modelo de classes de projeto em notação UML 2.3 mostrado abaixo, no qual os detalhes irrelevantes 
 	para a questão foram omitidos, considere que:
-	. ClasseY é a única classe abstrata do diagrama
-	. São apresentados os únicos relacionamentos existentes entre as classes envolvidas
-	. Z é uma instância de ClasseZ
+		. ClasseY é a única classe abstrata do diagrama
+		. São apresentados os únicos relacionamentos existentes entre as classes envolvidas
+		. Z é uma instância de ClasseZ
 
 	O modelo ao lado permite concluir que uma mensagem enviada por Z pode, direta ou indiretamente, disparar
 	a execução de uma operação definida em:
-		(A) ClasseU e ClasseW, mas não em ClasseX
-		(B) ClasseU e ClasseW, mas não em ClasseY
-		(C) ClasseX e ClasseY, mas não em ClasseZ
-		(D) ClasseX e ClasseZ, mas não em ClasseW
-		(E) ClasseZ e ClasseY, mas não em ClasseU 
-
-		Figura UML 2
-
+	(A) ClasseU e ClasseW, mas não em ClasseX
+	(B) ClasseU e ClasseW, mas não em ClasseY
+	(C) ClasseX e ClasseY, mas não em ClasseZ
+	(D) ClasseX e ClasseZ, mas não em ClasseW
+	(E) ClasseZ e ClasseY, mas não em ClasseU 
+			Figura UML 2
 		(Resposta Letra A)
-	</code>
-15. Aula - 29/05/2017
-	15.1. Revisão Geral para 2a Avaliação
-
-16. Aula - 05/06/2017
-	16.1. 2a Avaliação
-
-17. Aula - 12/06/2017
-	17.1. Aplicação do Questionário de Pesquisa Perfil do Aluno e Aderência com a Disciplina
-	17.2. Revisão Diagrama de Sequência e de Classe
-	17.3. Entrega e Dúvidas da 2a Avaliação
-</pre>	
+							</code></pre>
+						</li>
+					</ul></li>
+					<li><ul><b>15. Aula - 29/05/2017</b>
+							<li>15.1. Revisão Geral para 2a Avaliação</li>
+					</ul></li>
+					<li><ul><b>16. Aula - 05/06/2017</b>
+							<li>16.1. 2a Avaliação</li>
+					</ul></li>
+					<li><ul><b>17. Aula - 12/06/2017</b>
+						<li>17.1. Aplicação do Questionário de Pesquisa Perfil do Aluno e Aderência com a Disciplina</li>
+							<li>17.2. Revisão Diagrama de Sequência e de Classe</li>
+							<li>17.3. Entrega e Dúvidas da 2a Avaliação</li>
+					</ul></li>
+				</ul>
+			</div>
 			  <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
