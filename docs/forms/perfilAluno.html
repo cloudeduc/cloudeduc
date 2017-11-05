@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>Contact Form Example</title>
+</head>
+
+<body>
+  <h2 class="content-head is-center">QUESTIONÁRIO DE PESQUISA ACADÊMICA – ALUNO<br/>
+      Perfil do Aluno das Disciplinas: Análise e Projeto de Sistemas - APS ou Introdução aos Sistemas Operacionais - ISO</h2>
+  <aside>
+       <p>
+          Mestrado em Sistemas e Computação - UNIFACS
+          <p>Mestrando: Heleno Cardoso da Silva Filho – Mat. U2071014</p>
+          
+          O título da Dissertação:
+          <strong>“UMA ABORDAGEM DO USO DE CENÁRIOS DE COMPUTAÇÃO EM NUVEM NA GRADUAÇÃO EM COMPUTAÇÃO”.</strong>
+          
+          <p>Orientador: Professor Dr. Glauco Carneiro</p>
+          
+          
+          Este questionário de pesquisa acadêmica é uma das etapas do trabalho da Dissertação de Mestrado que objetiva identificar o perfil da turma da disciplina Introdução aos Sistemas Operacionais ou da disciplina Análise e Projeto de Sistemas. 
+        </p>
+   </aside>
+
+<!-- START HERE -->
+   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="./style.css">
+
+  <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbyGA7fvKdYsJaXKhfvhwWMO39PI0SzBeNs4lJ1tV6nbv1Hg0Ek/exec">
+    <!-- change the form action to your script url -->
+
+      <fieldset class="pure-group">
+        <label for="question1" class="pure-radio">1. Indique sua idade?
+          <input id="question1" type="radio" name="q1" value="less15">
+          Menos de 15 anos
+          <input id="question1" type="radio" name="q1" value="15-20">
+          De 15 a 20 anos
+          <input id="question1" type="radio" name="q1" value="21-25">
+          De 21 a 25 anos
+          <input id="question1" type="radio" name="q1" value="26-30">
+          De 26 a 30 anos
+          <input id="question1" type="radio" name="q1" value="more36">
+          Mais de 36 anos
+        </label>
+      </fieldset>
+      <fieldset class="pure-group">
+        <label for="question2" class="pure-radio">2. Qual língua estrangeira você domina?
+          <input id="question2" type="radio" name="q2" value="Ingles">
+            Inglês
+          <input id="question2" type="radio" name="q2" value="Frances">
+            Francês
+          <input id="question2" type="radio" name="q2" value="Espanhol">
+            Espanhol
+          <input id="question2" type="radio" name="q2" value="Alemao">
+            Alemão
+          <input id="question2" type="radio" name="q2" value="none">Nehuma Acima
+        </label>
+      </fieldset>
+      <fieldset class="pure-group">
+        <label for="question3" class="pure-radio">3. Quanto de carga horária você dispõe para os estudos?
+          <input id="question3" type="radio" name="q3" value="less30">
+          Até 30 minutos
+          <input id="question3" type="radio" name="q3" value="60">
+            Até 1 hora
+          <input id="question3" type="radio" name="q3" value="120">
+            Até 2 horas
+          <input id="question3" type="radio" name="q3" value="180">
+          Até 3 horas
+          <input id="question3" type="radio" name="q3" value="more180">Mais de 3 horas
+        </label>
+      </fieldset>
+      <fieldset class="pure-group">
+          <label for="question4" class="pure-radio">4. Como você avalia seu conhecimento em computação em nuvem?
+            <input id="question4" type="radio" name="q4" value="1">
+            Ruim
+            <input id="question4" type="radio" name="q4" value="2">
+            Regular
+            <input id="question4" type="radio" name="q4" value="3">
+            Bom
+            <input id="question4" type="radio" name="q4" value="4">
+            Ótimo
+            <input id="question4" type="radio" name="q4" value="5">Excelente
+          </label>
+      </fieldset>    
+      <fieldset class="pure-group">
+        <label for="question5" class="pure-radio">5. Você tem acesso fácil a um computador quando precisa?
+          <input id="question5" type="radio" name="q5" value="1">
+          Sim
+          <input id="question5" type="radio" name="q5" value="2">
+          Não
+        </label>
+      </fieldset> 
+      <fieldset class="pure-group">
+        <label for="question6" class="pure-radio">6. Você tem acesso fácil a internet quando precisa?
+          <input id="question6" type="radio" name="q6" value="1">
+          Sim
+          <input id="question6" type="radio" name="q6" value="2">
+          Não
+        </label>
+      </fieldset> 
+      <fieldset class="pure-group">
+        <label for="question7" class="pure-radio">7. Com que frequência você utiliza a internet ?
+          <input id="question7" type="radio" name="q7" value="1">
+          Diariamente
+          <input id="question7" type="radio" name="q7" value="2">
+          Duas vezes por semana
+          <input id="question7" type="radio" name="q7" value="3">
+          Mais do que duas vezes por semana
+          <input id="question7" type="radio" name="q7" value="4">
+          Somente nos finais de semana
+          <input id="question7" type="radio" name="q7" value="5">Não utiliza a internet
+        </label>
+      </fieldset> 
+      <fieldset class="pure-group">
+        <label for="question8" class="pure-radio">8. Onde, preferencialmente, você acessa a internet?
+          <input id="question8" type="radio" name="q8" value="1">
+          Em casa
+          <input id="question8" type="radio" name="q8" value="2">
+          Na Universidade
+          <input id="question8" type="radio" name="q8" value="3">
+          Na lan-house
+          <input id="question8" type="radio" name="q8" value="4">
+          Outros
+          <input id="question8" type="radio" name="q8" value="5">Não possui acesso
+        </label>
+      </fieldset> 
+      <fieldset class="pure-group">
+        <label for="question9" class="pure-radio">9. Em média qual a duração de seus acessos a dados?    
+          <input id="question9" type="radio" name="q9" value="1">
+          Até 30 minutos
+          <input id="question9" type="radio" name="q9" value="2">
+          Até 1 hora
+          <input id="question9" type="radio" name="q9" value="3">
+          Até 2 horas
+          <input id="question9" type="radio" name="q9" value="4">
+          Mais de 3 horas
+          <input id="question9" type="radio" name="q9" value="5"> Não utiliza a internet
+        </label>
+      </fieldset> 
+      <fieldset class="pure-group">
+        <label for="question10" class="pure-radio">10. Você habitualmente participa de fóruns e/ou listas de discussão?
+          <input id="question10" type="radio" name="q10" value="1">
+          Sim
+          <input id="question10" type="radio" name="q10" value="2">
+          Não
+        </label>
+      </fieldset>
+      <fieldset class="pure-group">
+        <label for="question11" class="pure-radio">11. Qual o sistema operacional que você mais utiliza?    
+          <input id="question11" type="radio" name="q11" value="1">
+          Alguma distribuição Linux
+          <input id="question11" type="radio" name="q11" value="2">
+          Windows
+          <input id="question11" type="radio" name="q11" value="3">
+          Mac OS
+          <input id="question11" type="radio" name="q11" value="4">
+          Solaris
+          <input id="question11" type="radio" name="q11" value="5">
+          Unix
+          <input id="question11" type="radio" name="q11" value="6">
+          Nenhuma Alternativa
+        </label>
+      </fieldset> 
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+</form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="./form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+
+</body>
+</html>
