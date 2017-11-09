@@ -32,7 +32,7 @@ function getFormData() {
     data[k] = elements[k].value;
     var str = ""; // declare empty string outside of loop to allow
                   // it to be appended to for each item in the loop
-    if(elements[k].type === "radio"){ // special case for Edge's html collection
+    if(elements[k].type === "radio" || elements[k].type === "checkbox" ){ // special case for Edge's html collection
       str = str + elements[k].checked + ", "; // take the string and append 
                                               // the current checked value to 
                                               // the end of it, along with 
